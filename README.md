@@ -100,6 +100,7 @@ The current silkscreen preserves the manually edited layout, with UK Computing a
 | [docs/](docs/) | Pin map, research and validation reports |
 | [source/](source/) | Artwork baseline, reference PCB and development/verification tools |
 | [Assembly guide](docs/ASSEMBLY.md) | 70 ns parts, fitting and system quantities |
+| [Component ordering](docs/COMPONENT-ORDERING.md) | DigiKey parts and quantities for either ten single-sided or ten double-sided modules, with spares |
 | [Fabrication options](docs/FABRICATION-OPTIONS.md) | Quotation selections and open bevel review |
 | [PCB ordering screenshots](docs/FABRICATION-OPTIONS.md#ordering-screenshot-reminders) | PCBWay settings, hard-gold thickness and selective-finish reminders |
 | [Project history](docs/PROJECT-HISTORY.md) | A1–A7 development record |

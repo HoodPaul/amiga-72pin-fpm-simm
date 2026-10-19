@@ -9,6 +9,9 @@ Test donor modules before removing chips where suitable test equipment is
 available. Ten four-chip donors contain forty chips before removal losses.
 Use new capacitors, resistors and links.
 
+For quantities, selected supplier part numbers and a ten-module shopping list
+with spares, see [component ordering](COMPONENT-ORDERING.md).
+
 ## Parts fitted per PCB
 
 | Reference | Component | Package | 4 MB front only | 8 MB front and rear |

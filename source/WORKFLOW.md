@@ -51,7 +51,7 @@ python3 source/compare_copper.py
 PCB from the retained uploaded baseline, preserve its existing artwork and PD
 references, update A6 revision text to A7, and add the JMC artwork. They do not
 regenerate placement, pads, tracks or zone fills. The JMC footprint is
-`HY8M.pretty/JMC_White_18mm.kicad_mod`; `source/JMC-source.png` and
+`HY8M.pretty/Artwork_White_18mm.kicad_mod`; `source/JMC-source.png` and
 `source/JMC-white.svg` retain its source and white vector artwork.
 
 Reapplying the wrapper replaces subsequent manual changes to the main PCB with

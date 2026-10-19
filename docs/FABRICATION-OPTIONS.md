@@ -1,8 +1,11 @@
 # Fabrication options and outstanding review
 
 These are the PCBWay quotation selections discussed on 19 October 2026.
-They are proposed order settings, not a completed order or manufacturing
-approval. No price or delivery date is guaranteed by these files.
+As of that date, donor components have been ordered and the PCB order has been
+submitted. The PCB is awaiting the manufacturer's engineering verification and
+approval before manufacture. The settings below record the intended order
+specification; manufacturer approval is still outstanding. No price or delivery
+date is guaranteed by these files.
 
 | Parameter | Selected/intended option |
 |---|---|

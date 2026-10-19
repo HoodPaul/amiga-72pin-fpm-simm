@@ -41,6 +41,11 @@ An A7 packaging review removed two obsolete A6 inner-layer Gerber duplicates. Th
 
 ## Status carried forward
 
+**19 October 2026:** donor components have been ordered and the PCB order has
+been submitted. The PCB is awaiting the manufacturer's engineering verification
+and approval before manufacture. Assembly and hardware testing are still to
+follow.
+
 No revision has been physically validated in an Amiga. The intended 8 MB assembly providing 2 MB Chip RAM remains an inference from host wiring. CAD connectivity and mapping checks are separate from timing, refresh, fit and hardware testing.
 
 The inherited contact setback remains 0.2286 mm against the 0.50 mm edge rule. Manufacturer acceptance or revised geometry, the bevel process, proposed 1.2 mm stack-up and socket fit remain unresolved. A7 is a routed draft with review Gerbers, not an approved fabrication release.

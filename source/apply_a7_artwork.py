@@ -15,7 +15,7 @@ for i in range(1,5):
  assert f'(property "Reference" "RPD{i}"' not in s
 s=s.replace('(rev "A6")','(rev "A7")',1)
 s=s.replace('"REV A6"','"REV A7"').replace('"A6 FOUR-LAYER ROUTED DRAFT"','"A7 FOUR-LAYER ROUTED DRAFT"')
-mod=(r/'HY8M.pretty/JMC_White_18mm.kicad_mod').read_text()
+mod=(r/'HY8M.pretty/Artwork_White_18mm.kicad_mod').read_text()
 polys=re.findall(r'\(fp_poly \(pts (.*?)\)\s*\(stroke',mod,re.S)
 assert len(polys)==76
 namespace=uuid.UUID('f7d0f695-a827-493d-a1b7-329a080bc2fd')

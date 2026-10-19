@@ -2,7 +2,11 @@
 
 A common PCB for **4 MB single-sided** and **8 MB double-sided** 5 V FPM SIMMs, developed for Amiga 4000 motherboard memory configurations. Current revision: **A7**.
 
+The project began with a wish to make RAM that visually matches Re-Amiga systems: **black PCB, white silkscreen and gold contacts and exposed pads**. It is a collaboration between **Paul of UK Computing Limited**, **Jon of JMC Electronics** and **AI assistance through Codex**.
+
 **Routed CAD draft. No physical prototype has been tested. The included Gerbers are for review, not an approved manufacturing release.**
+
+**Status, 19 October 2026:** donor components have been ordered, and the PCB order has been submitted. The PCB is awaiting the manufacturer's engineering verification and approval before manufacture. Assembly and hardware testing are still to follow.
 
 ![Front appearance](previews/appearance-front.png)
 ![Rear appearance](previews/appearance-rear.png)
@@ -55,6 +59,8 @@ Fast-slot numbering excludes the separate Chip RAM socket. These configurations 
 
 ## Donor chips
 
+The Hyundai HY5118160 devices were chosen for their relatively low SOJ package profile and the availability of suitable donor SIMMs on online marketplaces during project planning. This made them a practical starting point for the matching modules while keeping one chip family across the 4 MB and 8 MB builds.
+
 Obtain readable photographs of **every fitted chip on both faces** before buying a donor. The specified 70 ns device is **HY5118160JC-70**: 5 V, 1M×16, FPM, 42-pin 400 mil SOJ, 1K refresh. The separately verified 60 ns alternative is **HY5118160BJC-60**.
 
 An “8 MB / 2M×32 / 72-pin” listing or bare PCB number does not identify its chips. **HY5118164 is EDO**, and **HY5116160B has a different refresh organisation**; neither is the specified donor. Confirm the complete marking and datasheet rather than relying on similar part numbers.
@@ -63,7 +69,7 @@ Test the intact donor before desoldering and record orientation/pin 1. One healt
 
 ## Fabrication issues still open
 
-- **Finger setback:** the 144 contact pads have **0.2286 mm** clearance to the outline. [PCBWay's published gold-finger guidance](https://www.pcbway.com/pcb_prototype/PCB_Gold_fingers.html) specifies **0.5 mm minimum**. The present geometry needs a manufacturer-approved resolution before ordering.
+- **Finger setback:** the 144 contact pads have **0.2286 mm** clearance to the outline. [PCBWay's published gold-finger guidance](https://www.pcbway.com/pcb_prototype/PCB_Gold_fingers.html) specifies **0.5 mm minimum**. The present geometry needs a manufacturer-approved resolution before manufacture.
 - **Bevel:** a **45° bevel is unresolved**, not an approved order setting. Agree the actual contact/bevel geometry and processing method for this 25.4 mm-high module; see [PCBWay's bevel guidance](https://www.pcbway.com/helpcenter/Engineering_Questions/The_requirement_of_beveling_on_gold_finger_area.html).
 - Confirm the proposed 1.2 mm finished stack-up, SOJ land pattern, socket/case fit and wear-resistant hard-gold contact process. Generic ENIG is not a substitute for an agreed finger-plating specification.
 
@@ -99,6 +105,8 @@ The current silkscreen preserves the manually edited layout, with UK Computing a
 | [NOTICE.md](NOTICE.md) | Template attribution and supplied artwork |
 
 ## Attribution
+
+Project collaboration: **Paul, UK Computing Limited; Jon, JMC Electronics; and AI assistance through Codex**. The collaborators ask that the UK Computing and JMC artwork remains in its existing positions on shared versions and manufactured boards derived from this design, with the project and template credits retained. See [attribution and supplied artwork](NOTICE.md).
 
 The mechanical starting point is [wiretap-retro/72-pin-SIMM-KiCAD-Template](https://github.com/wiretap-retro/72-pin-SIMM-KiCAD-Template). Its original [template README](source/template-README.md) and [PCB template](source/template.kicad_pcb) are retained. Circuit/package facts come from Hyundai documentation; host behaviour and PD codes are sourced in [compatibility research](docs/compatibility-research.md).
 

@@ -1,0 +1,18 @@
+Reference,70ns_value,60ns_value,Package,4MB-60ns,4MB-70ns,8MB-60ns,8MB-70ns,Notes
+PCB,HY8M A7,HY8M A7,72-pin SIMM,1,1,1,1,Common four-layer 107.95 x 25.4 mm board; proposed 1.2 mm thickness
+C1,220 nF,220 nF,0805,1,1,1,1,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+C2,220 nF,220 nF,0805,1,1,1,1,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+C3,220 nF,220 nF,0805,0,0,1,1,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+C4,220 nF,220 nF,0805,0,0,1,1,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+PD1,0 ohm,0 ohm,0603,1,1,0,0,0 ohm link from PD pin to GND. Unfitted means electrically open.
+PD2,0 ohm,0 ohm,0603,1,1,0,0,0 ohm link from PD pin to GND. Unfitted means electrically open.
+PD3,0 ohm,0 ohm,0603,0,1,0,1,0 ohm link from PD pin to GND. Unfitted means electrically open.
+PD4,0 ohm,0 ohm,0603,0,0,0,0,0 ohm link from PD pin to GND. Unfitted means electrically open.
+R1,0 ohm,0 ohm,0603,0,0,1,1,0 ohm rear low-halfword RAS enable. Fit with R2 for 8 MB.
+R2,0 ohm,0 ohm,0603,0,0,1,1,0 ohm rear high-halfword RAS enable. Fit with R1 for 8 MB.
+R3,10 kohm,10 kohm,0603,0,0,1,1,10 kohm rear low-halfword RAS pull-up to +5 V.
+R4,10 kohm,10 kohm,0603,0,0,1,1,10 kohm rear high-halfword RAS pull-up to +5 V.
+U1,HY5118160JC-70,HY5118160BJC-60,SOJ42 400 mil,1,1,1,1,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.
+U2,HY5118160JC-70,HY5118160BJC-60,SOJ42 400 mil,1,1,1,1,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.
+U3,HY5118160JC-70,HY5118160BJC-60,SOJ42 400 mil,0,0,1,1,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.
+U4,HY5118160JC-70,HY5118160BJC-60,SOJ42 400 mil,0,0,1,1,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.

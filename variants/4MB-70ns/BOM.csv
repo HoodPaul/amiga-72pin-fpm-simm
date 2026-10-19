@@ -1,0 +1,9 @@
+Reference,Quantity,Value_or_MPN,Package,Notes
+PCB,1,HY8M A7 common PCB,72-pin SIMM,107.95 x 25.4 mm; four layers; 1.2 mm proposed; fabrication review pending
+C1,1,220 nF,0805,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+C2,1,220 nF,0805,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+PD1,1,0 ohm,0603,0 ohm link from PD pin to GND. Unfitted means electrically open.
+PD2,1,0 ohm,0603,0 ohm link from PD pin to GND. Unfitted means electrically open.
+PD3,1,0 ohm,0603,0 ohm link from PD pin to GND. Unfitted means electrically open.
+U1,1,HY5118160JC-70,SOJ42 400 mil,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.
+U2,1,HY5118160JC-70,SOJ42 400 mil,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.

@@ -1,0 +1,361 @@
+HY8M-SIMM A3 independent logical mapping review
+Input: /workspace/scratch/e336e9d09343/HY8M-SIMM-RevA7-JMC/docs/design-data.json
+
+PASS: 321 assertions.
+
+Data/byte-enable assignments (internal chip DQ order):
+U1: lower byte [0, 1, 2, 3, 4, 5, 6, 7], CAS0_N; upper byte [15, 14, 13, 12, 11, 10, 9, 8], CAS1_N
+U2: lower byte [23, 22, 21, 20, 19, 18, 17, 16], CAS2_N; upper byte [24, 25, 26, 27, 28, 29, 30, 31], CAS3_N
+U3: lower byte [8, 9, 10, 11, 12, 13, 14, 15], CAS1_N; upper byte [7, 6, 5, 4, 3, 2, 1, 0], CAS0_N
+U4: lower byte [31, 30, 29, 28, 27, 26, 25, 24], CAS3_N; upper byte [16, 17, 18, 19, 20, 21, 22, 23], CAS2_N
+
+Front-only assembly: U1/U2 provide all 32 module data bits, with each
+8-bit group governed by the correct independent CAS line. Their RAS0
+and RAS2 connections implement one complete 1M x32 (4 MiB) rank.
+
+Rear assembly: U3/U4 provide another complete 1M x32 rank. R1 connects
+RAS1 to the lower halfword and R2 connects RAS3 to the upper halfword.
+With R1/R2 fitted as 0 ohms, the two ranks give 8 MiB physical capacity.
+
+If the rear chips are fitted but disabled, omit R1/R2 and fit R3/R4
+pull-ups so the rear RAS inputs remain inactive. This disables access
+to that rank. Populate only the front chips for a physically single-sided
+4 MiB module suitable for the intended adjacent-socket installation.
+
+Address mapping: front chips retain identity A0..A9. Rear chips reverse
+A0..A7 while preserving A8/A9. All ten-bit addresses remain bijective,
+and the 256-, 512- and 1024-row subsets are individually preserved.
+The finite permutation check establishes mapping equivalence; it does
+not validate timing or prove hardware refresh behaviour.
+
+PD1..PD4 each have independent, correctly connected ground straps.
+Actual population must follow the capacity/speed table. Strap population
+and resistor values are not represented in design-data.json and were
+therefore not verified by this logical net-map review.
+
+Scope: JSON circuit mapping only. This review does not compare the
+schematic netlist or routed PCB, check electrical timing, establish
+A4000 Chip RAM operation, confirm donor chips, or approve fabrication.
+
+Detailed assertions:
+PASS CAS0 uses standard SIMM contact 40
+PASS CAS1 uses standard SIMM contact 43
+PASS CAS2 uses standard SIMM contact 41
+PASS CAS3 uses standard SIMM contact 42
+PASS RAS0_N uses standard SIMM contact 44
+PASS RAS1_N uses standard SIMM contact 45
+PASS RAS2_N uses standard SIMM contact 34
+PASS RAS3_N uses standard SIMM contact 33
+PASS U1.2 remains a data signal
+PASS U1.2 stays in its RAS-controlled module halfword
+PASS U1 internal DQ0 / module DQ0 uses CAS0_N
+PASS U1.3 remains a data signal
+PASS U1.3 stays in its RAS-controlled module halfword
+PASS U1 internal DQ1 / module DQ1 uses CAS0_N
+PASS U1.4 remains a data signal
+PASS U1.4 stays in its RAS-controlled module halfword
+PASS U1 internal DQ2 / module DQ2 uses CAS0_N
+PASS U1.5 remains a data signal
+PASS U1.5 stays in its RAS-controlled module halfword
+PASS U1 internal DQ3 / module DQ3 uses CAS0_N
+PASS U1.7 remains a data signal
+PASS U1.7 stays in its RAS-controlled module halfword
+PASS U1 internal DQ4 / module DQ4 uses CAS0_N
+PASS U1.8 remains a data signal
+PASS U1.8 stays in its RAS-controlled module halfword
+PASS U1 internal DQ5 / module DQ5 uses CAS0_N
+PASS U1.9 remains a data signal
+PASS U1.9 stays in its RAS-controlled module halfword
+PASS U1 internal DQ6 / module DQ6 uses CAS0_N
+PASS U1.10 remains a data signal
+PASS U1.10 stays in its RAS-controlled module halfword
+PASS U1 internal DQ7 / module DQ7 uses CAS0_N
+PASS U1.33 remains a data signal
+PASS U1.33 stays in its RAS-controlled module halfword
+PASS U1 internal DQ8 / module DQ15 uses CAS1_N
+PASS U1.34 remains a data signal
+PASS U1.34 stays in its RAS-controlled module halfword
+PASS U1 internal DQ9 / module DQ14 uses CAS1_N
+PASS U1.35 remains a data signal
+PASS U1.35 stays in its RAS-controlled module halfword
+PASS U1 internal DQ10 / module DQ13 uses CAS1_N
+PASS U1.36 remains a data signal
+PASS U1.36 stays in its RAS-controlled module halfword
+PASS U1 internal DQ11 / module DQ12 uses CAS1_N
+PASS U1.38 remains a data signal
+PASS U1.38 stays in its RAS-controlled module halfword
+PASS U1 internal DQ12 / module DQ11 uses CAS1_N
+PASS U1.39 remains a data signal
+PASS U1.39 stays in its RAS-controlled module halfword
+PASS U1 internal DQ13 / module DQ10 uses CAS1_N
+PASS U1.40 remains a data signal
+PASS U1.40 stays in its RAS-controlled module halfword
+PASS U1 internal DQ14 / module DQ9 uses CAS1_N
+PASS U1.41 remains a data signal
+PASS U1.41 stays in its RAS-controlled module halfword
+PASS U1 internal DQ15 / module DQ8 uses CAS1_N
+PASS U1 maps its complete 16-bit halfword bijectively
+PASS U2.2 remains a data signal
+PASS U2.2 stays in its RAS-controlled module halfword
+PASS U2 internal DQ0 / module DQ23 uses CAS2_N
+PASS U2.3 remains a data signal
+PASS U2.3 stays in its RAS-controlled module halfword
+PASS U2 internal DQ1 / module DQ22 uses CAS2_N
+PASS U2.4 remains a data signal
+PASS U2.4 stays in its RAS-controlled module halfword
+PASS U2 internal DQ2 / module DQ21 uses CAS2_N
+PASS U2.5 remains a data signal
+PASS U2.5 stays in its RAS-controlled module halfword
+PASS U2 internal DQ3 / module DQ20 uses CAS2_N
+PASS U2.7 remains a data signal
+PASS U2.7 stays in its RAS-controlled module halfword
+PASS U2 internal DQ4 / module DQ19 uses CAS2_N
+PASS U2.8 remains a data signal
+PASS U2.8 stays in its RAS-controlled module halfword
+PASS U2 internal DQ5 / module DQ18 uses CAS2_N
+PASS U2.9 remains a data signal
+PASS U2.9 stays in its RAS-controlled module halfword
+PASS U2 internal DQ6 / module DQ17 uses CAS2_N
+PASS U2.10 remains a data signal
+PASS U2.10 stays in its RAS-controlled module halfword
+PASS U2 internal DQ7 / module DQ16 uses CAS2_N
+PASS U2.33 remains a data signal
+PASS U2.33 stays in its RAS-controlled module halfword
+PASS U2 internal DQ8 / module DQ24 uses CAS3_N
+PASS U2.34 remains a data signal
+PASS U2.34 stays in its RAS-controlled module halfword
+PASS U2 internal DQ9 / module DQ25 uses CAS3_N
+PASS U2.35 remains a data signal
+PASS U2.35 stays in its RAS-controlled module halfword
+PASS U2 internal DQ10 / module DQ26 uses CAS3_N
+PASS U2.36 remains a data signal
+PASS U2.36 stays in its RAS-controlled module halfword
+PASS U2 internal DQ11 / module DQ27 uses CAS3_N
+PASS U2.38 remains a data signal
+PASS U2.38 stays in its RAS-controlled module halfword
+PASS U2 internal DQ12 / module DQ28 uses CAS3_N
+PASS U2.39 remains a data signal
+PASS U2.39 stays in its RAS-controlled module halfword
+PASS U2 internal DQ13 / module DQ29 uses CAS3_N
+PASS U2.40 remains a data signal
+PASS U2.40 stays in its RAS-controlled module halfword
+PASS U2 internal DQ14 / module DQ30 uses CAS3_N
+PASS U2.41 remains a data signal
+PASS U2.41 stays in its RAS-controlled module halfword
+PASS U2 internal DQ15 / module DQ31 uses CAS3_N
+PASS U2 maps its complete 16-bit halfword bijectively
+PASS U3.2 remains a data signal
+PASS U3.2 stays in its RAS-controlled module halfword
+PASS U3 internal DQ0 / module DQ8 uses CAS1_N
+PASS U3.3 remains a data signal
+PASS U3.3 stays in its RAS-controlled module halfword
+PASS U3 internal DQ1 / module DQ9 uses CAS1_N
+PASS U3.4 remains a data signal
+PASS U3.4 stays in its RAS-controlled module halfword
+PASS U3 internal DQ2 / module DQ10 uses CAS1_N
+PASS U3.5 remains a data signal
+PASS U3.5 stays in its RAS-controlled module halfword
+PASS U3 internal DQ3 / module DQ11 uses CAS1_N
+PASS U3.7 remains a data signal
+PASS U3.7 stays in its RAS-controlled module halfword
+PASS U3 internal DQ4 / module DQ12 uses CAS1_N
+PASS U3.8 remains a data signal
+PASS U3.8 stays in its RAS-controlled module halfword
+PASS U3 internal DQ5 / module DQ13 uses CAS1_N
+PASS U3.9 remains a data signal
+PASS U3.9 stays in its RAS-controlled module halfword
+PASS U3 internal DQ6 / module DQ14 uses CAS1_N
+PASS U3.10 remains a data signal
+PASS U3.10 stays in its RAS-controlled module halfword
+PASS U3 internal DQ7 / module DQ15 uses CAS1_N
+PASS U3.33 remains a data signal
+PASS U3.33 stays in its RAS-controlled module halfword
+PASS U3 internal DQ8 / module DQ7 uses CAS0_N
+PASS U3.34 remains a data signal
+PASS U3.34 stays in its RAS-controlled module halfword
+PASS U3 internal DQ9 / module DQ6 uses CAS0_N
+PASS U3.35 remains a data signal
+PASS U3.35 stays in its RAS-controlled module halfword
+PASS U3 internal DQ10 / module DQ5 uses CAS0_N
+PASS U3.36 remains a data signal
+PASS U3.36 stays in its RAS-controlled module halfword
+PASS U3 internal DQ11 / module DQ4 uses CAS0_N
+PASS U3.38 remains a data signal
+PASS U3.38 stays in its RAS-controlled module halfword
+PASS U3 internal DQ12 / module DQ3 uses CAS0_N
+PASS U3.39 remains a data signal
+PASS U3.39 stays in its RAS-controlled module halfword
+PASS U3 internal DQ13 / module DQ2 uses CAS0_N
+PASS U3.40 remains a data signal
+PASS U3.40 stays in its RAS-controlled module halfword
+PASS U3 internal DQ14 / module DQ1 uses CAS0_N
+PASS U3.41 remains a data signal
+PASS U3.41 stays in its RAS-controlled module halfword
+PASS U3 internal DQ15 / module DQ0 uses CAS0_N
+PASS U3 maps its complete 16-bit halfword bijectively
+PASS U4.2 remains a data signal
+PASS U4.2 stays in its RAS-controlled module halfword
+PASS U4 internal DQ0 / module DQ31 uses CAS3_N
+PASS U4.3 remains a data signal
+PASS U4.3 stays in its RAS-controlled module halfword
+PASS U4 internal DQ1 / module DQ30 uses CAS3_N
+PASS U4.4 remains a data signal
+PASS U4.4 stays in its RAS-controlled module halfword
+PASS U4 internal DQ2 / module DQ29 uses CAS3_N
+PASS U4.5 remains a data signal
+PASS U4.5 stays in its RAS-controlled module halfword
+PASS U4 internal DQ3 / module DQ28 uses CAS3_N
+PASS U4.7 remains a data signal
+PASS U4.7 stays in its RAS-controlled module halfword
+PASS U4 internal DQ4 / module DQ27 uses CAS3_N
+PASS U4.8 remains a data signal
+PASS U4.8 stays in its RAS-controlled module halfword
+PASS U4 internal DQ5 / module DQ26 uses CAS3_N
+PASS U4.9 remains a data signal
+PASS U4.9 stays in its RAS-controlled module halfword
+PASS U4 internal DQ6 / module DQ25 uses CAS3_N
+PASS U4.10 remains a data signal
+PASS U4.10 stays in its RAS-controlled module halfword
+PASS U4 internal DQ7 / module DQ24 uses CAS3_N
+PASS U4.33 remains a data signal
+PASS U4.33 stays in its RAS-controlled module halfword
+PASS U4 internal DQ8 / module DQ16 uses CAS2_N
+PASS U4.34 remains a data signal
+PASS U4.34 stays in its RAS-controlled module halfword
+PASS U4 internal DQ9 / module DQ17 uses CAS2_N
+PASS U4.35 remains a data signal
+PASS U4.35 stays in its RAS-controlled module halfword
+PASS U4 internal DQ10 / module DQ18 uses CAS2_N
+PASS U4.36 remains a data signal
+PASS U4.36 stays in its RAS-controlled module halfword
+PASS U4 internal DQ11 / module DQ19 uses CAS2_N
+PASS U4.38 remains a data signal
+PASS U4.38 stays in its RAS-controlled module halfword
+PASS U4 internal DQ12 / module DQ20 uses CAS2_N
+PASS U4.39 remains a data signal
+PASS U4.39 stays in its RAS-controlled module halfword
+PASS U4 internal DQ13 / module DQ21 uses CAS2_N
+PASS U4.40 remains a data signal
+PASS U4.40 stays in its RAS-controlled module halfword
+PASS U4 internal DQ14 / module DQ22 uses CAS2_N
+PASS U4.41 remains a data signal
+PASS U4.41 stays in its RAS-controlled module halfword
+PASS U4 internal DQ15 / module DQ23 uses CAS2_N
+PASS U4 maps its complete 16-bit halfword bijectively
+PASS front 4 MiB rank contains every data bit once
+PASS rear 4 MiB rank contains every data bit once
+PASS U1 internal A0 maps to module A0
+PASS U1 internal A1 maps to module A1
+PASS U1 internal A2 maps to module A2
+PASS U1 internal A3 maps to module A3
+PASS U1 internal A4 maps to module A4
+PASS U1 internal A5 maps to module A5
+PASS U1 internal A6 maps to module A6
+PASS U1 internal A7 maps to module A7
+PASS U1 internal A8 maps to module A8
+PASS U1 internal A9 maps to module A9
+PASS U1 address mapping is bijective
+PASS U1.1 supply is +5 V
+PASS U1.6 supply is +5 V
+PASS U1.21 supply is +5 V
+PASS U1.22 ground/OE is grounded
+PASS U1.29 ground/OE is grounded
+PASS U1.37 ground/OE is grounded
+PASS U1.42 ground/OE is grounded
+PASS U1 shares the module write-enable input
+PASS U1.11 NC is unconnected
+PASS U1.12 NC is unconnected
+PASS U1.15 NC is unconnected
+PASS U1.16 NC is unconnected
+PASS U1.32 NC is unconnected
+PASS U2 internal A0 maps to module A0
+PASS U2 internal A1 maps to module A1
+PASS U2 internal A2 maps to module A2
+PASS U2 internal A3 maps to module A3
+PASS U2 internal A4 maps to module A4
+PASS U2 internal A5 maps to module A5
+PASS U2 internal A6 maps to module A6
+PASS U2 internal A7 maps to module A7
+PASS U2 internal A8 maps to module A8
+PASS U2 internal A9 maps to module A9
+PASS U2 address mapping is bijective
+PASS U2.1 supply is +5 V
+PASS U2.6 supply is +5 V
+PASS U2.21 supply is +5 V
+PASS U2.22 ground/OE is grounded
+PASS U2.29 ground/OE is grounded
+PASS U2.37 ground/OE is grounded
+PASS U2.42 ground/OE is grounded
+PASS U2 shares the module write-enable input
+PASS U2.11 NC is unconnected
+PASS U2.12 NC is unconnected
+PASS U2.15 NC is unconnected
+PASS U2.16 NC is unconnected
+PASS U2.32 NC is unconnected
+PASS U3 internal A0 maps to module A7
+PASS U3 internal A1 maps to module A6
+PASS U3 internal A2 maps to module A5
+PASS U3 internal A3 maps to module A4
+PASS U3 internal A4 maps to module A3
+PASS U3 internal A5 maps to module A2
+PASS U3 internal A6 maps to module A1
+PASS U3 internal A7 maps to module A0
+PASS U3 internal A8 maps to module A8
+PASS U3 internal A9 maps to module A9
+PASS U3 address mapping is bijective
+PASS U3.1 supply is +5 V
+PASS U3.6 supply is +5 V
+PASS U3.21 supply is +5 V
+PASS U3.22 ground/OE is grounded
+PASS U3.29 ground/OE is grounded
+PASS U3.37 ground/OE is grounded
+PASS U3.42 ground/OE is grounded
+PASS U3 shares the module write-enable input
+PASS U3.11 NC is unconnected
+PASS U3.12 NC is unconnected
+PASS U3.15 NC is unconnected
+PASS U3.16 NC is unconnected
+PASS U3.32 NC is unconnected
+PASS U4 internal A0 maps to module A7
+PASS U4 internal A1 maps to module A6
+PASS U4 internal A2 maps to module A5
+PASS U4 internal A3 maps to module A4
+PASS U4 internal A4 maps to module A3
+PASS U4 internal A5 maps to module A2
+PASS U4 internal A6 maps to module A1
+PASS U4 internal A7 maps to module A0
+PASS U4 internal A8 maps to module A8
+PASS U4 internal A9 maps to module A9
+PASS U4 address mapping is bijective
+PASS U4.1 supply is +5 V
+PASS U4.6 supply is +5 V
+PASS U4.21 supply is +5 V
+PASS U4.22 ground/OE is grounded
+PASS U4.29 ground/OE is grounded
+PASS U4.37 ground/OE is grounded
+PASS U4.42 ground/OE is grounded
+PASS U4 shares the module write-enable input
+PASS U4.11 NC is unconnected
+PASS U4.12 NC is unconnected
+PASS U4.15 NC is unconnected
+PASS U4.16 NC is unconnected
+PASS U4.32 NC is unconnected
+PASS Front low halfword uses RAS0
+PASS Front high halfword uses RAS2
+PASS Rear low halfword uses its isolated RAS net
+PASS Rear high halfword uses its isolated RAS net
+PASS R1 rear-rank enable/pull-up connectivity is correct
+PASS R2 rear-rank enable/pull-up connectivity is correct
+PASS R3 rear-rank enable/pull-up connectivity is correct
+PASS R4 rear-rank enable/pull-up connectivity is correct
+PASS PD1 uses SIMM contact 67
+PASS PD1 has an independent ground strap
+PASS PD2 uses SIMM contact 68
+PASS PD2 has an independent ground strap
+PASS PD3 uses SIMM contact 69
+PASS PD3 has an independent ground strap
+PASS PD4 uses SIMM contact 70
+PASS PD4 has an independent ground strap
+PASS Rear permutation preserves the complete 256-row address subset
+PASS Rear permutation preserves the complete 512-row address subset
+PASS Rear permutation preserves the complete 1024-row address subset

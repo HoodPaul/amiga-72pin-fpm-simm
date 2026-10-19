@@ -1,0 +1,15 @@
+A7 artwork preservation, 19 October 2026
+
+PASS: every original uploaded board object is retained byte-for-byte, apart from A6-to-A7 revision text.
+PASS: exactly 76 new filled F.SilkS polygons form the JMC logo; no other board objects added or removed.
+PASS: all pre-existing front/rear silkscreen positions, styles, artwork and labels preserved.
+PASS: PD1-PD4 are the native reference properties. These references now match the current schematic and BOM.
+PASS: standalone JMC footprint and integrated PCB both load in KiCad 10.0.7.
+PASS: current native front/rear plots and corresponding black/gold/white previews visually reviewed.
+
+The appearance renderer draws the touching logo triangles as one compound path to prevent raster antialiasing seams. This changes no CAD or Gerber geometry.
+
+Uploaded baseline SHA-256: f96539f0a508eb2cfafc21c871a8ea2691b73abbe3ab032b2619d46f9d04a014
+Final A7 PCB SHA-256: d8f85c1c56e4a714a24b207beaf72cefbaef4fc62e5805e96cf1508029d5352e
+
+PASS: the main schematic also matches the uploaded schematic byte-for-byte after the four RPD-to-PD reference substitutions and revision title update; no wiring or component population changed.

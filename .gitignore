@@ -1,0 +1,16 @@
+# KiCad workstation state and temporary files
+*.kicad_prl
+*.lck
+*.bak
+*~
+*-backups/
+_autosave-*
+fp-info-cache
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db

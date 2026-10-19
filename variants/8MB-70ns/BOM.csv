@@ -1,0 +1,15 @@
+Reference,Quantity,Value_or_MPN,Package,Notes
+PCB,1,HY8M A7 common PCB,72-pin SIMM,107.95 x 25.4 mm; four layers; 1.2 mm proposed; fabrication review pending
+C1,1,220 nF,0805,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+C2,1,220 nF,0805,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+C3,1,220 nF,0805,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+C4,1,220 nF,0805,220 nF; 0805; 16 V or higher; X7R; +/-10%; fit new capacitors.
+PD3,1,0 ohm,0603,0 ohm link from PD pin to GND. Unfitted means electrically open.
+R1,1,0 ohm,0603,0 ohm rear low-halfword RAS enable. Fit with R2 for 8 MB.
+R2,1,0 ohm,0603,0 ohm rear high-halfword RAS enable. Fit with R1 for 8 MB.
+R3,1,10 kohm,0603,10 kohm rear low-halfword RAS pull-up to +5 V.
+R4,1,10 kohm,0603,10 kohm rear high-halfword RAS pull-up to +5 V.
+U1,1,HY5118160JC-70,SOJ42 400 mil,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.
+U2,1,HY5118160JC-70,SOJ42 400 mil,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.
+U3,1,HY5118160JC-70,SOJ42 400 mil,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.
+U4,1,HY5118160JC-70,SOJ42 400 mil,42-pin 400 mil SOJ; 5 V; 1Mx16; FPM; 1K refresh. Readable exact donor marking required.

@@ -1,0 +1,41 @@
+A7 user-edited silkscreen and JMC review, 19 October 2026
+
+The authoritative layout baseline is the uploaded KiCad 10 native PCB retained
+as source/user-silkscreen-reference.kicad_pcb. Its custom artwork is preserved.
+Existing 17 footprint objects and 42 board text objects match the uploaded
+baseline, with only the intended A6-to-A7 revision wording changes in board text.
+Its five original graphic polygons are retained; 76 new filled JMC polygons
+are added on front silkscreen. See artwork-preservation.txt for the byte-level
+preservation proof.
+
+Front:
+- Original UK Computing artwork on the left is unchanged in native silkscreen.
+- JMC is solid-white F.SilkS artwork at the top right, 18.000 x 3.480 mm.
+  Ink bounds: x193.000..211.000, y87.060..90.540 mm.
+- Original front chip markings, component labels and contact labels are kept.
+- Presence-detect references are PD1, PD2, PD3, PD4, as already in the upload.
+- Front remains at the lower outer edge.
+
+Rear:
+- User's assembly/population text is in the U4 body area.
+- User's capacity/speed table is in the U3 body area.
+- Those notes are covered when rear ICs are fitted and visible on front-only
+  boards. The user's wording, glyphs, positions and table are retained.
+- The assembly legend gives the 4 MB/8 MB R1/R2 settings, R3/R4 value and
+  C1-C4 = 0.22 microfarad. The selected BOM governs which capacitors are fitted.
+- Rear and contacts 1, 36, 37, 72 keep their correct physical face orientation.
+
+PCB, main schematic, variant schematics, BOMs and pin-map references are aligned
+to PD1-PD4. Open means an unfitted link; fitted PD links and rear R1/R2 links
+are 0-ohm components. R3/R4 are each 10 kohms for 8 MB. The true front-only 4 MB
+build omits R1-R4, U3/U4 and C3/C4.
+
+Exact copper/mechanical comparison is recorded in copper-comparison.txt/json:
+864 segments, 195 vias, 336 pads, 17 component placements, 13 Edge.Cuts
+primitives, 2 zone outlines and 10 saved filled polygons are unchanged from the
+uploaded board and A6. Recorded A3-A6 geometry hashes also agree.
+
+DRC, schematic-parity and ERC outcomes are recorded separately in the current
+validation reports. This artwork review does not assert a full clean DRC/ERC
+result. The baseline 144 contact-edge findings and hardware/fabrication-review
+status remain separate from the requested silkscreen changes.

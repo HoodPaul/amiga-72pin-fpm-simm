@@ -1,0 +1,130 @@
+{
+  "4MB-60ns": {
+    "capacity_mib": 4,
+    "speed_ns": 60,
+    "dram_mpn": "HY5118160BJC-60",
+    "fitted": [
+      "C1",
+      "C2",
+      "PD1",
+      "PD2",
+      "U1",
+      "U2"
+    ],
+    "dnp": [
+      "C3",
+      "C4",
+      "PD3",
+      "PD4",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "U3",
+      "U4"
+    ],
+    "pd_grounded": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "rear_enabled": false
+  },
+  "4MB-70ns": {
+    "capacity_mib": 4,
+    "speed_ns": 70,
+    "dram_mpn": "HY5118160JC-70",
+    "fitted": [
+      "C1",
+      "C2",
+      "PD1",
+      "PD2",
+      "PD3",
+      "U1",
+      "U2"
+    ],
+    "dnp": [
+      "C3",
+      "C4",
+      "PD4",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "U3",
+      "U4"
+    ],
+    "pd_grounded": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "rear_enabled": false
+  },
+  "8MB-60ns": {
+    "capacity_mib": 8,
+    "speed_ns": 60,
+    "dram_mpn": "HY5118160BJC-60",
+    "fitted": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "U1",
+      "U2",
+      "U3",
+      "U4"
+    ],
+    "dnp": [
+      "PD1",
+      "PD2",
+      "PD3",
+      "PD4"
+    ],
+    "pd_grounded": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "rear_enabled": true
+  },
+  "8MB-70ns": {
+    "capacity_mib": 8,
+    "speed_ns": 70,
+    "dram_mpn": "HY5118160JC-70",
+    "fitted": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "PD3",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "U1",
+      "U2",
+      "U3",
+      "U4"
+    ],
+    "dnp": [
+      "PD1",
+      "PD2",
+      "PD4"
+    ],
+    "pd_grounded": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "rear_enabled": true
+  }
+}

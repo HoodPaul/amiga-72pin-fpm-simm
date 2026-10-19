@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "HY8M")(type "KiCad")(uri "${KIPRJMOD}/../../HY8M.pretty")(options "")(descr "Shared project footprints")))

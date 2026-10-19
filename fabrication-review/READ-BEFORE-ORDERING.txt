@@ -1,0 +1,61 @@
+HY8M A7 DRAFT GERBERS: TECHNICAL REVIEW ONLY
+
+These files are exported from the four-layer user-edited A7 PCB with the added
+JMC logo. They are not an approved fabrication release.
+
+Nominal outline: 107.95 x 25.4 mm. Four copper layers. Proposed finished
+thickness: 1.2 mm; dielectric thicknesses/copper weights require confirmation.
+Intended finish: black solder mask, white silkscreen and wear-resistant
+hard-gold edge contacts. Decorative gold/ENIG and selective finger plating are
+separate process choices. Gerbers do not encode colour or plating grade.
+
+Layer allocation:
+F.Cu: front signals/pads
+In1.Cu: GND plane
+In2.Cu: signal tracks with +5 V fill
+B.Cu: rear signals/pads
+
+Nominal minimum tracks/spacing: 0.20/0.20 mm.
+Through vias: 0.60 mm copper diameter, 0.30 mm drill.
+Routed supply tracks: 0.40 mm, with 0.25 mm connector joins and supply fill.
+
+The inherited 144 contact-edge findings concern a 0.2286 mm gold-finger pad
+setback against the generic 0.50 mm rule. Review finger length, plating/mask
+openings, edge setback, finished thickness and bevel profile with the fabricator.
+No arbitrary 45-degree bevel is specified. Refer to the current DRC/validation
+reports for complete findings and project check settings; this note does not
+claim a full clean DRC, schematic-parity or ERC result.
+
+The two retaining holes are closed circular Edge.Cuts profiles from the
+mechanical template, not duplicate NPTH drill hits. Review their outline/routing
+interpretation and dimensions/tolerances. The key notch and contact positions
+are unchanged from the accepted reference geometry.
+
+Four copper layers, front/rear mask, silkscreen, paste and outline files are
+included. The common paste files include unfitted component positions.
+Assembly and stencil use must follow the selected variant BOM. A true 4 MB
+single-sided build omits rear ICs/capacitors and R1-R4. The 8 MB build uses
+R1/R2 = 0 ohm and R3/R4 = 10 kohm each. PD strap references are PD1-PD4 in the
+PCB, schematics and BOMs; fitted straps are 0 ohm and absent straps are open.
+
+A7 preserves the uploaded custom silkscreen, including the front-left UK
+Computing artwork. JMC is added at the front top right as filled white artwork,
+18.000 x 3.480 mm, ink bounds x193..211, y87.06..90.54 mm. The user's rear
+assembly instructions are under U4 and the PD table under U3, covered when rear
+ICs are fitted. Original glyphs and positioning are retained. Review fine logo
+details with the legend process; appearance previews show illustrative colours.
+
+Exact native comparison confirms the same 864 tracks, 195 vias, 336 pads,
+17 component placements, 13 Edge.Cuts primitives, 2 zone outlines and 10 filled
+copper polygons as the uploaded PCB and retained A6 reference. Historical
+A3-A6 geometry also agrees. Reports are in ../docs/copper-comparison.txt/json.
+
+No physical donor, assembled board, timing, refresh or Amiga hardware validation
+has been completed. The intended 8 MB module providing 2 MB Chip RAM remains an
+inference from host wiring. Read ../README.md and the current validation and
+compatibility reports before fabrication.
+
+PACKAGING CORRECTION: obsolete A6 inner-layer duplicate exports were removed.
+Use the four copper filenames in ../docs/layer-file-map.txt. All current A7
+Gerbers and the native PCB are unchanged. The separate Gerbers Review ZIP
+contains only the current eleven Gerbers, two drill files and Gerber job file.

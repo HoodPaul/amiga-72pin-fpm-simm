@@ -1,0 +1,61 @@
+A7 copper and mechanical preservation audit
+Result: PASS
+
+Exact Decimal comparison of saved native geometry. Net IDs resolve to names; layer IDs resolve through native layer names. RPD1-RPD4 and PD1-PD4 are reference aliases. Object UUIDs, whitespace, save order, polygon starting vertices and polygon winding do not affect the result.
+
+A6_reference: copper-reference-A6.kicad_pcb
+  Native SHA-256: 6cfa72e0f8b486be5644dbfe0fd81b1854d0e7880b6ae8f9a5ce642dc426458b
+  tracks=864, vias=195, pads=336, component_placements=17, board_outline=13, zone_outlines=2, filled_zone_polygons=10, other_copper_graphics=0, copper_layer_stack=1, board_thickness=1
+user_uploaded_PCB: user-silkscreen-reference.kicad_pcb
+  Native SHA-256: f96539f0a508eb2cfafc21c871a8ea2691b73abbe3ab032b2619d46f9d04a014
+  tracks=864, vias=195, pads=336, component_placements=17, board_outline=13, zone_outlines=2, filled_zone_polygons=10, other_copper_graphics=0, copper_layer_stack=1, board_thickness=1
+final_PCB: HY8M-SIMM.kicad_pcb
+  Native SHA-256: d8f85c1c56e4a714a24b207beaf72cefbaef4fc62e5805e96cf1508029d5352e
+  tracks=864, vias=195, pads=336, component_placements=17, board_outline=13, zone_outlines=2, filled_zone_polygons=10, other_copper_graphics=0, copper_layer_stack=1, board_thickness=1
+
+A6_vs_user_upload: IDENTICAL
+  tracks: IDENTICAL
+  vias: IDENTICAL
+  pads: IDENTICAL
+  component_placements: IDENTICAL
+  board_outline: IDENTICAL
+  zone_outlines: IDENTICAL
+  filled_zone_polygons: IDENTICAL
+  other_copper_graphics: IDENTICAL
+  copper_layer_stack: IDENTICAL
+  board_thickness: IDENTICAL
+A6_vs_final: IDENTICAL
+  tracks: IDENTICAL
+  vias: IDENTICAL
+  pads: IDENTICAL
+  component_placements: IDENTICAL
+  board_outline: IDENTICAL
+  zone_outlines: IDENTICAL
+  filled_zone_polygons: IDENTICAL
+  other_copper_graphics: IDENTICAL
+  copper_layer_stack: IDENTICAL
+  board_thickness: IDENTICAL
+user_upload_vs_final: IDENTICAL
+  tracks: IDENTICAL
+  vias: IDENTICAL
+  pads: IDENTICAL
+  component_placements: IDENTICAL
+  board_outline: IDENTICAL
+  zone_outlines: IDENTICAL
+  filled_zone_polygons: IDENTICAL
+  other_copper_graphics: IDENTICAL
+  copper_layer_stack: IDENTICAL
+  board_thickness: IDENTICAL
+
+Historical A3-A6 source-session checks: MATCH retained A6 geometry
+  A3-4Layer native SHA-256: d18ebd9610cf5aacb079e09870d238fe38a214e46122209507661d99dc60998b
+  A4-Showpiece native SHA-256: e07668d8e1762ac16fe11fe61163c9728c7ebff15b636b04b8963a3766476741
+  A5-Showpiece native SHA-256: 5e3c8978c20298230ecc2f4772475a2b7964594f1a03658afea0441a90998d33
+  A6-Showpiece native SHA-256: 6cfa72e0f8b486be5644dbfe0fd81b1854d0e7880b6ae8f9a5ce642dc426458b
+
+Silkscreen artwork, text placement, graphic logos, title blocks and padless logo footprints are intentionally outside this copper/mechanical comparison.
+The user's upload already renames RPD1-RPD4 to PD1-PD4. This changes the component references, not their pads, positions or electrical nets.
+KiCad 10 omits the old filled_areas_thickness=no field and explicitly saves island_removal_mode=0. Saved zone outlines and all filled copper polygon vertices are compared independently; the attribute snapshots are recorded for review.
+This audit compares saved native artwork. It does not refill zones, run DRC, or establish hardware operation.
+
+Per-category canonical SHA-256 hashes are in copper-comparison.json.

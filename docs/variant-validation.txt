@@ -1,0 +1,23 @@
+A7 common-PCB assembly variant verification
+Fresh KiCad 10 XML exports; all options retain common connectivity.
+
+PASS: 4MB-60ns: all 233 connected logical pins match the common PCB.
+PASS: 4MB-60ns: DNP flags, fitted-component BOM, chip MPN and PD code agree.
+  Fitted: C1, C2, PD1, PD2, U1, U2
+  DNP: C3, C4, PD3, PD4, R1, R2, R3, R4, U3, U4
+PASS: 4MB-70ns: all 233 connected logical pins match the common PCB.
+PASS: 4MB-70ns: DNP flags, fitted-component BOM, chip MPN and PD code agree.
+  Fitted: C1, C2, PD1, PD2, PD3, U1, U2
+  DNP: C3, C4, PD4, R1, R2, R3, R4, U3, U4
+PASS: 8MB-60ns: all 233 connected logical pins match the common PCB.
+PASS: 8MB-60ns: DNP flags, fitted-component BOM, chip MPN and PD code agree.
+  Fitted: C1, C2, C3, C4, R1, R2, R3, R4, U1, U2, U3, U4
+  DNP: PD1, PD2, PD3, PD4
+PASS: 8MB-70ns: all 233 connected logical pins match the common PCB.
+PASS: 8MB-70ns: DNP flags, fitted-component BOM, chip MPN and PD code agree.
+  Fitted: C1, C2, C3, C4, PD3, R1, R2, R3, R4, U1, U2, U3, U4
+  DNP: PD1, PD2, PD4
+
+The common PCB retains every pad and net for each option.
+The variant schematic and BOM specify fitting. Population equivalence does not
+establish hardware operation or donor authenticity.

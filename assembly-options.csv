@@ -1,0 +1,5 @@
+Build,DRAM_MPN,Front_chips,Rear_chips,R1_R2,R3_R4,PD1,PD2,PD3,PD4,Intended_use
+4MB-60ns,HY5118160BJC-60,U1 U2,DNP,DNP,DNP,0 ohm,0 ohm,DNP,DNP,Fast RAM one rank
+4MB-70ns,HY5118160JC-70,U1 U2,DNP,DNP,DNP,0 ohm,0 ohm,0 ohm,DNP,Fast RAM one rank
+8MB-60ns,HY5118160BJC-60,U1 U2,U3 U4,0 ohm,10 kohm,DNP,DNP,DNP,DNP,Fast RAM two ranks; intended 2 MB Chip RAM experiment
+8MB-70ns,HY5118160JC-70,U1 U2,U3 U4,0 ohm,10 kohm,DNP,DNP,0 ohm,DNP,Fast RAM two ranks; intended 2 MB Chip RAM experiment

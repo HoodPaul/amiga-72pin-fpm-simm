@@ -1,0 +1,17 @@
+# Keep native CAD and verification inputs byte-for-byte across platforms.
+* text=auto
+*.kicad_pcb -text
+*.kicad_sch -text
+*.kicad_pro -text
+*.kicad_sym -text
+*.kicad_mod -text
+*.csv -text
+*.dsn -text
+*.ses -text
+
+# Artwork and packaged outputs
+*.png binary
+*.jpg binary
+*.webp binary
+*.zip binary
+*.pdf binary

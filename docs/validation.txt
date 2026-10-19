@@ -1,0 +1,46 @@
+HY8M A7 four-layer draft verification, 2026-10-19T17:40:04, KiCad 10.0.7
+
+PASS: exact saved copper/mechanics comparison with uploaded PCB and retained A6 reference.
+PASS: independent logical mapping reviewer passed all 321 assertions.
+PASS: all 336 physical pads match the intended map and fresh Eeschema 10.0.7-10.0.7~ubuntu24.04.1 XML.
+PASS: 294 connected physical pads / 233 logical pins; 42 intentional NC pads.
+PASS: complete 4 MiB front/rear ranks; correct independent CAS byte enables and RAS links.
+PASS: rear A0..A7 reversal remains bijective; A8/A9 unchanged.
+PASS: four variant XML topologies, DNP flags, fitted BOM populations and PD codes agree.
+PASS: 107.95 x 25.4 mm outline, retaining holes, notch and 144 contacts preserved.
+PASS: four layers; In1 GND; In2 signals/+5V fill; remaining signals F/B.
+PASS: 864 saved track segments; 195 through vias; minimum track 0.20 mm; vias 0.60/0.30 mm.
+PASS: zero unconnected items; no reported shorts, copper-to-copper clearance or dangling-copper findings.
+PASS: checker did not refill zones, save a board or modify PCB/schematic files.
+
+OUTSTANDING BOARD DRC: 144 copper-edge errors remain visible.
+Every finding is a J1 contact pad: 0.2286 mm clearance against the generic 0.50 mm rule.
+No non-contact edge findings were reported. Contact hard-gold/bevel requires fabrication review.
+
+SCHEMATIC PARITY: 46 warnings remain visible; no functional connected-net conflict was found.
+ 42: KiCad 10 exports explicit unconnected-(...) nets for NC pins; preserved PCB pads have no net.
+ These comprise 22 J1 face pads and 20 DRAM NC pads.
+ 1: J1 PCB value is J1; schematic value is 72-pin / 4 or 8 MB / FPM.
+ 3: common-PCB DNP attributes differ from the main 8 MB / 70 ns schematic at PD1/PD2/PD4.
+ Variant schematics/BOMs specify actual fitting; these metadata warnings do not change copper.
+
+Existing project settings ignore 7 DRC check types:
+  missing_courtyard: Footprint has no courtyard defined
+  track_not_centered_on_via: Track endpoint not centered on via
+  tuning_profile_track_geometries: Tuning profile track geometries
+  footprint_filters_mismatch: Footprint doesn't match symbol's footprint filters
+  pth_inside_courtyard: PTH inside courtyard
+  npth_inside_courtyard: NPTH inside courtyard
+  footprint_type_mismatch: Footprint component type doesn't match footprint pads
+No actual findings are excluded from this report. All 144 errors and 46 parity warnings remain visible.
+
+ERC is available in KiCad 10 but no ERC report is included in this verification.
+
+Checked native PCB SHA-256: d8f85c1c56e4a714a24b207beaf72cefbaef4fc62e5805e96cf1508029d5352e
+DRC report: docs/drc-routed.json; recorded source: HY8M-SIMM.kicad_pcb.
+Verification uses saved zone copper and does not refill or rewrite it.
+
+Not a fabrication release. Proposed 1.2 mm thickness, stack-up, land pattern, contact finish/bevel
+and assembled/socket fit require review. No donor authenticity, physical board, timing, signal
+integrity, retention/refresh or A4000 operation has been tested. Intended 8 MiB assembly use
+as 2 MiB Chip RAM remains an untested host-wiring inference.

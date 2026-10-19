@@ -1,0 +1,23 @@
+A7 four-layer Gerber order, front to rear
+
+L1  HY8M-SIMM-F_Cu.gtl    F.Cu, front signals/pads
+L2  HY8M-SIMM-In1_Cu.g1   In1.Cu, GND plane
+L3  HY8M-SIMM-In2_Cu.g2   In2.Cu, signals and +5 V fill
+L4  HY8M-SIMM-B_Cu.gbl    B.Cu, rear signals/pads
+L5/L6 do not apply. Set the PCB order to four copper layers.
+
+Other manufacturing layers:
+HY8M-SIMM-F_Silkscreen.gto / HY8M-SIMM-B_Silkscreen.gbo: front/rear legend
+HY8M-SIMM-F_Mask.gts / HY8M-SIMM-B_Mask.gbs: front/rear solder mask
+HY8M-SIMM-F_Paste.gtp / HY8M-SIMM-B_Paste.gbp: front/rear stencil paste
+HY8M-SIMM-Edge_Cuts.gm1: board outline
+HY8M-SIMM-PTH.drl / HY8M-SIMM-NPTH.drl: plated/non-plated drill
+HY8M-SIMM-job.gbrjob: job metadata, including explicit physical layer order
+
+Packaging correction, 19 October 2026:
+Removed two obsolete A6 inner-layer exports, In1_Cu.g2 and In2_Cu.g3,
+which duplicated the current A7 L2 and L3 exports. The current Gerber X2
+FileFunction attributes and job manifest agree on exactly four copper layers.
+No native PCB, schematic, routing, artwork or current A7 Gerber was altered.
+
+Native PCB SHA-256: d8f85c1c56e4a714a24b207beaf72cefbaef4fc62e5805e96cf1508029d5352e

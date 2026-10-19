@@ -1,0 +1,4049 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-19T17:40:04",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [
+        {
+            "description": "Value (J1) doesn't match symbol value (72-pin / 4 or 8 MB / FPM)",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 158.925,
+                        "y": 110.7714
+                    },
+                    "uuid": "5455f8bb-0628-45d1-91a6-4800e0046e65"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad11))",
+            "items": [
+                {
+                    "description": "Pad 11 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 124.05,
+                        "y": 109.5014
+                    },
+                    "uuid": "aadc1185-f495-4e9e-8756-7712254cd8a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad11))",
+            "items": [
+                {
+                    "description": "Pad 11 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 124.05,
+                        "y": 109.5014
+                    },
+                    "uuid": "a2fb5bfa-c7cc-4678-a6fb-75ca01788e4b"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad19))",
+            "items": [
+                {
+                    "description": "Pad 19 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 134.21,
+                        "y": 109.5014
+                    },
+                    "uuid": "8b376683-d2d3-4719-91ad-1b2175f02a15"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad19))",
+            "items": [
+                {
+                    "description": "Pad 19 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 134.21,
+                        "y": 109.5014
+                    },
+                    "uuid": "8c479dee-9d9d-4e68-8de3-80d314fbfa0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad29))",
+            "items": [
+                {
+                    "description": "Pad 29 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 146.91,
+                        "y": 109.5014
+                    },
+                    "uuid": "f0f21468-417d-4658-bf47-dccfb8d82ebf"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad29))",
+            "items": [
+                {
+                    "description": "Pad 29 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 146.91,
+                        "y": 109.5014
+                    },
+                    "uuid": "48efcae8-abb5-4e59-9bd8-c11b1e003a82"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad35))",
+            "items": [
+                {
+                    "description": "Pad 35 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 154.53,
+                        "y": 109.5014
+                    },
+                    "uuid": "245818c3-40a8-42bc-9d7e-8313d0a812b8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad35))",
+            "items": [
+                {
+                    "description": "Pad 35 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 154.53,
+                        "y": 109.5014
+                    },
+                    "uuid": "4c8fdb46-0353-4244-a89d-0e55f3f814c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad36))",
+            "items": [
+                {
+                    "description": "Pad 36 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 155.8,
+                        "y": 109.5014
+                    },
+                    "uuid": "63ac0203-e6d3-4033-a5e3-8e6ccd171121"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad36))",
+            "items": [
+                {
+                    "description": "Pad 36 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 155.8,
+                        "y": 109.5014
+                    },
+                    "uuid": "c2e0a600-7e4a-4051-b454-f668fc155851"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad37))",
+            "items": [
+                {
+                    "description": "Pad 37 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 162.15,
+                        "y": 109.5014
+                    },
+                    "uuid": "3338700d-1215-45ba-bffb-434251427595"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad37))",
+            "items": [
+                {
+                    "description": "Pad 37 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 162.15,
+                        "y": 109.5014
+                    },
+                    "uuid": "e1bda35d-74e3-4e6a-9779-cbf278fbb2e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad38))",
+            "items": [
+                {
+                    "description": "Pad 38 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 163.42,
+                        "y": 109.5014
+                    },
+                    "uuid": "849ece53-ecfb-458a-85d2-86be53f64c56"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad38))",
+            "items": [
+                {
+                    "description": "Pad 38 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 163.42,
+                        "y": 109.5014
+                    },
+                    "uuid": "0df4b93c-8e04-4e7e-b1fe-685cdfdaad18"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad46))",
+            "items": [
+                {
+                    "description": "Pad 46 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 173.58,
+                        "y": 109.5014
+                    },
+                    "uuid": "8a49f3b9-215d-4563-a1d5-2d2f8e936c50"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad46))",
+            "items": [
+                {
+                    "description": "Pad 46 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 173.58,
+                        "y": 109.5014
+                    },
+                    "uuid": "f89c2df5-ec9b-4e17-ae64-5d949cecfa35"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad48))",
+            "items": [
+                {
+                    "description": "Pad 48 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 176.12,
+                        "y": 109.5014
+                    },
+                    "uuid": "1b0556ff-e821-4e56-aec3-93f99b506a07"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad48))",
+            "items": [
+                {
+                    "description": "Pad 48 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 176.12,
+                        "y": 109.5014
+                    },
+                    "uuid": "7eb007f5-f8bd-43be-9612-efc67cf54eca"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad66))",
+            "items": [
+                {
+                    "description": "Pad 66 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 198.98,
+                        "y": 109.5014
+                    },
+                    "uuid": "ac72aed8-47fc-4872-b75b-879e819ee887"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad66))",
+            "items": [
+                {
+                    "description": "Pad 66 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 198.98,
+                        "y": 109.5014
+                    },
+                    "uuid": "d7953cbe-4d0c-477d-9bdc-0599d90bcc33"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad71))",
+            "items": [
+                {
+                    "description": "Pad 71 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 205.33,
+                        "y": 109.5014
+                    },
+                    "uuid": "6fd90547-1c07-412d-a9bc-940f28d892ca"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(J1-NC-Pad71))",
+            "items": [
+                {
+                    "description": "Pad 71 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 205.33,
+                        "y": 109.5014
+                    },
+                    "uuid": "a7bad3a3-74a6-4758-a3f4-3eff78629918"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Do not populate' settings differ",
+            "items": [
+                {
+                    "description": "Footprint PD1",
+                    "pos": {
+                        "x": 203.0,
+                        "y": 94.0
+                    },
+                    "uuid": "ba558bcd-5015-4b9a-8103-fb3d531ff711"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Do not populate' settings differ",
+            "items": [
+                {
+                    "description": "Footprint PD2",
+                    "pos": {
+                        "x": 203.0,
+                        "y": 97.0
+                    },
+                    "uuid": "16d1447c-db70-4e3c-bded-cc0db07fc4b0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Do not populate' settings differ",
+            "items": [
+                {
+                    "description": "Footprint PD4",
+                    "pos": {
+                        "x": 203.0,
+                        "y": 103.0
+                    },
+                    "uuid": "eb56dfa2-887f-4e3d-b632-dfe40bf213dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-NC-Pad11))",
+            "items": [
+                {
+                    "description": "Pad 11 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 102.65
+                    },
+                    "uuid": "42fbbd0a-9a70-4936-958d-4b59d603e17d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-NC-Pad12))",
+            "items": [
+                {
+                    "description": "Pad 12 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 144.27,
+                        "y": 102.65
+                    },
+                    "uuid": "50b15452-4cae-46b8-8d6f-f328d93b4fe5"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-NC-Pad15))",
+            "items": [
+                {
+                    "description": "Pad 15 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 148.08,
+                        "y": 102.65
+                    },
+                    "uuid": "5941df5c-9ed1-41bb-ae2a-42339d6ace24"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-NC-Pad16))",
+            "items": [
+                {
+                    "description": "Pad 16 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 149.35,
+                        "y": 102.65
+                    },
+                    "uuid": "35856759-34a2-4c9c-939b-185d136db26e"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U1-NC-Pad32))",
+            "items": [
+                {
+                    "description": "Pad 32 [<no net>] of U1 on F.Cu",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 92.35
+                    },
+                    "uuid": "434f107a-94ac-4f80-afd7-20ee180faaea"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U2-NC-Pad11))",
+            "items": [
+                {
+                    "description": "Pad 11 [<no net>] of U2 on F.Cu",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 92.35
+                    },
+                    "uuid": "ed1e9f65-3adb-4892-9848-eab04f585d65"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U2-NC-Pad12))",
+            "items": [
+                {
+                    "description": "Pad 12 [<no net>] of U2 on F.Cu",
+                    "pos": {
+                        "x": 173.73,
+                        "y": 92.35
+                    },
+                    "uuid": "e9e3b458-a58e-4929-bce6-91a1cef89641"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U2-NC-Pad15))",
+            "items": [
+                {
+                    "description": "Pad 15 [<no net>] of U2 on F.Cu",
+                    "pos": {
+                        "x": 169.92,
+                        "y": 92.35
+                    },
+                    "uuid": "a5d7b26e-5cfd-4022-b24c-f27d30c84f14"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U2-NC-Pad16))",
+            "items": [
+                {
+                    "description": "Pad 16 [<no net>] of U2 on F.Cu",
+                    "pos": {
+                        "x": 168.65,
+                        "y": 92.35
+                    },
+                    "uuid": "369411dd-4499-415b-a1cd-349d2de8b4e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U2-NC-Pad32))",
+            "items": [
+                {
+                    "description": "Pad 32 [<no net>] of U2 on F.Cu",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 102.65
+                    },
+                    "uuid": "b8127bb2-3192-415b-a9b0-df08c3a29dbc"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-NC-Pad11))",
+            "items": [
+                {
+                    "description": "Pad 11 [<no net>] of U3 on B.Cu",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 92.35
+                    },
+                    "uuid": "463c14c3-004e-42ff-87a8-55e3eea74475"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-NC-Pad12))",
+            "items": [
+                {
+                    "description": "Pad 12 [<no net>] of U3 on B.Cu",
+                    "pos": {
+                        "x": 144.27,
+                        "y": 92.35
+                    },
+                    "uuid": "de5175e3-d6cb-430f-a624-ccfbdcdfd88f"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-NC-Pad15))",
+            "items": [
+                {
+                    "description": "Pad 15 [<no net>] of U3 on B.Cu",
+                    "pos": {
+                        "x": 148.08,
+                        "y": 92.35
+                    },
+                    "uuid": "ae96f775-98e6-4d88-95bd-7146a857e2f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-NC-Pad16))",
+            "items": [
+                {
+                    "description": "Pad 16 [<no net>] of U3 on B.Cu",
+                    "pos": {
+                        "x": 149.35,
+                        "y": 92.35
+                    },
+                    "uuid": "ab68a7ce-f409-46e2-9b82-3a2c41554779"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U3-NC-Pad32))",
+            "items": [
+                {
+                    "description": "Pad 32 [<no net>] of U3 on B.Cu",
+                    "pos": {
+                        "x": 143.0,
+                        "y": 102.65
+                    },
+                    "uuid": "302da726-0070-4d95-8246-23915b2b6a14"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U4-NC-Pad11))",
+            "items": [
+                {
+                    "description": "Pad 11 [<no net>] of U4 on B.Cu",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 102.65
+                    },
+                    "uuid": "6abe9304-86de-4c30-a7ad-41f22fd408a8"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U4-NC-Pad12))",
+            "items": [
+                {
+                    "description": "Pad 12 [<no net>] of U4 on B.Cu",
+                    "pos": {
+                        "x": 173.73,
+                        "y": 102.65
+                    },
+                    "uuid": "35d42970-f377-48e8-9f25-8784e32a3e82"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U4-NC-Pad15))",
+            "items": [
+                {
+                    "description": "Pad 15 [<no net>] of U4 on B.Cu",
+                    "pos": {
+                        "x": 169.92,
+                        "y": 102.65
+                    },
+                    "uuid": "c83b29c6-26ed-4786-98b4-859c734169ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U4-NC-Pad16))",
+            "items": [
+                {
+                    "description": "Pad 16 [<no net>] of U4 on B.Cu",
+                    "pos": {
+                        "x": 168.65,
+                        "y": 102.65
+                    },
+                    "uuid": "6c4ab1bd-2e4c-4d9e-ad91-0c5dbe5ae572"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad missing net given by schematic (unconnected-(U4-NC-Pad32))",
+            "items": [
+                {
+                    "description": "Pad 32 [<no net>] of U4 on B.Cu",
+                    "pos": {
+                        "x": 175.0,
+                        "y": 92.35
+                    },
+                    "uuid": "4eabcf69-32a3-4339-b540-d74248587b70"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        }
+    ],
+    "source": "HY8M-SIMM.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 1 [/GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 111.35,
+                        "y": 109.5014
+                    },
+                    "uuid": "b165af3f-3625-40b0-b12f-80a077f78a1c"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 1 [/GND] of J1 on B.Cu",
+                    "pos": {
+                        "x": 111.35,
+                        "y": 109.5014
+                    },
+                    "uuid": "4e4c520d-3087-4601-be70-6b0cad838f21"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 2 [/DQ0] of J1 on F.Cu",
+                    "pos": {
+                        "x": 112.62,
+                        "y": 109.5014
+                    },
+                    "uuid": "6c436662-5279-4c16-b540-49f5e44a659e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 2 [/DQ0] of J1 on B.Cu",
+                    "pos": {
+                        "x": 112.62,
+                        "y": 109.5014
+                    },
+                    "uuid": "0a1d11d9-f0b4-43da-9a8e-4fe8952b17ea"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 3 [/DQ16] of J1 on F.Cu",
+                    "pos": {
+                        "x": 113.89,
+                        "y": 109.5014
+                    },
+                    "uuid": "c4d50202-19e5-4b4a-a4d4-7219fe545ab3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 3 [/DQ16] of J1 on B.Cu",
+                    "pos": {
+                        "x": 113.89,
+                        "y": 109.5014
+                    },
+                    "uuid": "b4b0e586-8817-45de-98e4-1e8c1a265428"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 4 [/DQ1] of J1 on F.Cu",
+                    "pos": {
+                        "x": 115.16,
+                        "y": 109.5014
+                    },
+                    "uuid": "5ae5e21b-a3cf-48bd-b431-9bb56041adaa"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 4 [/DQ1] of J1 on B.Cu",
+                    "pos": {
+                        "x": 115.16,
+                        "y": 109.5014
+                    },
+                    "uuid": "c41131a5-cd12-4cd6-bf89-63c1f596c98d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 5 [/DQ17] of J1 on F.Cu",
+                    "pos": {
+                        "x": 116.43,
+                        "y": 109.5014
+                    },
+                    "uuid": "03b1411b-6fc6-4685-9e72-63e3a01c740a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 5 [/DQ17] of J1 on B.Cu",
+                    "pos": {
+                        "x": 116.43,
+                        "y": 109.5014
+                    },
+                    "uuid": "973f6082-dc4d-49b4-a98d-394f05cd85e5"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 6 [/DQ2] of J1 on F.Cu",
+                    "pos": {
+                        "x": 117.7,
+                        "y": 109.5014
+                    },
+                    "uuid": "c3677ed2-3d9d-4c30-8008-1ba73d027dae"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 6 [/DQ2] of J1 on B.Cu",
+                    "pos": {
+                        "x": 117.7,
+                        "y": 109.5014
+                    },
+                    "uuid": "9600e32e-9756-47a9-af86-a5ea4ea8c48d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 7 [/DQ18] of J1 on F.Cu",
+                    "pos": {
+                        "x": 118.97,
+                        "y": 109.5014
+                    },
+                    "uuid": "dcc64087-7610-4b26-9e9a-3a97387db7dd"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 7 [/DQ18] of J1 on B.Cu",
+                    "pos": {
+                        "x": 118.97,
+                        "y": 109.5014
+                    },
+                    "uuid": "8e6de938-7980-41d1-9763-2af29d296fee"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 8 [/DQ3] of J1 on F.Cu",
+                    "pos": {
+                        "x": 120.24,
+                        "y": 109.5014
+                    },
+                    "uuid": "b5898ea0-0b30-42de-8035-85878f5520d5"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 8 [/DQ3] of J1 on B.Cu",
+                    "pos": {
+                        "x": 120.24,
+                        "y": 109.5014
+                    },
+                    "uuid": "c7d92605-5817-4cbb-93a8-f570acb23d35"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 9 [/DQ19] of J1 on F.Cu",
+                    "pos": {
+                        "x": 121.51,
+                        "y": 109.5014
+                    },
+                    "uuid": "f3350367-56aa-487d-828f-61a485ca51d1"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 9 [/DQ19] of J1 on B.Cu",
+                    "pos": {
+                        "x": 121.51,
+                        "y": 109.5014
+                    },
+                    "uuid": "c0e3bf6c-2828-4198-b644-4214a9d9ab01"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 10 [/+5V] of J1 on F.Cu",
+                    "pos": {
+                        "x": 122.78,
+                        "y": 109.5014
+                    },
+                    "uuid": "c549b25e-5f0a-4d1e-87c8-3cacee82930f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 10 [/+5V] of J1 on B.Cu",
+                    "pos": {
+                        "x": 122.78,
+                        "y": 109.5014
+                    },
+                    "uuid": "c7a28b52-c472-4a98-8081-574732701966"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 11 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 124.05,
+                        "y": 109.5014
+                    },
+                    "uuid": "aadc1185-f495-4e9e-8756-7712254cd8a7"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 11 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 124.05,
+                        "y": 109.5014
+                    },
+                    "uuid": "a2fb5bfa-c7cc-4678-a6fb-75ca01788e4b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 12 [/A0] of J1 on F.Cu",
+                    "pos": {
+                        "x": 125.32,
+                        "y": 109.5014
+                    },
+                    "uuid": "dc4abc42-bf4a-413f-a21a-25822e46200b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 12 [/A0] of J1 on B.Cu",
+                    "pos": {
+                        "x": 125.32,
+                        "y": 109.5014
+                    },
+                    "uuid": "6ae95054-b310-41e8-8d80-f3e11c2d360a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 13 [/A1] of J1 on F.Cu",
+                    "pos": {
+                        "x": 126.59,
+                        "y": 109.5014
+                    },
+                    "uuid": "764f989f-4efa-481f-bde2-e4834666eca6"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 13 [/A1] of J1 on B.Cu",
+                    "pos": {
+                        "x": 126.59,
+                        "y": 109.5014
+                    },
+                    "uuid": "d8935d5f-e013-4bbe-82d4-8e1fcdc0d1a5"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 14 [/A2] of J1 on F.Cu",
+                    "pos": {
+                        "x": 127.86,
+                        "y": 109.5014
+                    },
+                    "uuid": "b11ab60b-f361-4e48-8ba4-4b329fd08bef"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 14 [/A2] of J1 on B.Cu",
+                    "pos": {
+                        "x": 127.86,
+                        "y": 109.5014
+                    },
+                    "uuid": "d7cd19f0-7c90-4d99-a4d0-65c281e86c5f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 15 [/A3] of J1 on F.Cu",
+                    "pos": {
+                        "x": 129.13,
+                        "y": 109.5014
+                    },
+                    "uuid": "907e7086-d34c-4e30-b6a9-7e54c4b3d8cd"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 15 [/A3] of J1 on B.Cu",
+                    "pos": {
+                        "x": 129.13,
+                        "y": 109.5014
+                    },
+                    "uuid": "26b4bd1e-8cc2-4c34-9b3a-41cfc61870fc"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 16 [/A4] of J1 on F.Cu",
+                    "pos": {
+                        "x": 130.4,
+                        "y": 109.5014
+                    },
+                    "uuid": "3e99904f-3ba8-4bfd-a317-eeee545eb167"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 16 [/A4] of J1 on B.Cu",
+                    "pos": {
+                        "x": 130.4,
+                        "y": 109.5014
+                    },
+                    "uuid": "795072c9-6f55-49d3-977e-2c2c8ad7302b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 17 [/A5] of J1 on F.Cu",
+                    "pos": {
+                        "x": 131.67,
+                        "y": 109.5014
+                    },
+                    "uuid": "b7f53f40-f528-4896-a129-0f605adaa109"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 17 [/A5] of J1 on B.Cu",
+                    "pos": {
+                        "x": 131.67,
+                        "y": 109.5014
+                    },
+                    "uuid": "3f3ff0a0-dc00-48d3-afaf-41590d945f43"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 18 [/A6] of J1 on F.Cu",
+                    "pos": {
+                        "x": 132.94,
+                        "y": 109.5014
+                    },
+                    "uuid": "fbf83893-7e58-4b09-aee0-83d069dad50d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 18 [/A6] of J1 on B.Cu",
+                    "pos": {
+                        "x": 132.94,
+                        "y": 109.5014
+                    },
+                    "uuid": "1471e69c-a469-481e-98da-62870d262d16"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 19 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 134.21,
+                        "y": 109.5014
+                    },
+                    "uuid": "8b376683-d2d3-4719-91ad-1b2175f02a15"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 19 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 134.21,
+                        "y": 109.5014
+                    },
+                    "uuid": "8c479dee-9d9d-4e68-8de3-80d314fbfa0c"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 20 [/DQ4] of J1 on F.Cu",
+                    "pos": {
+                        "x": 135.48,
+                        "y": 109.5014
+                    },
+                    "uuid": "67299862-a9d0-4c9c-b916-e2b2bc413da3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 20 [/DQ4] of J1 on B.Cu",
+                    "pos": {
+                        "x": 135.48,
+                        "y": 109.5014
+                    },
+                    "uuid": "50799bb0-cb30-4af1-9ab0-4617ad0a2ecd"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 21 [/DQ20] of J1 on F.Cu",
+                    "pos": {
+                        "x": 136.75,
+                        "y": 109.5014
+                    },
+                    "uuid": "97d76dcb-1ce0-4738-9b75-25dccd640d15"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 21 [/DQ20] of J1 on B.Cu",
+                    "pos": {
+                        "x": 136.75,
+                        "y": 109.5014
+                    },
+                    "uuid": "da73e23c-a3a5-484e-826e-4dca8db2d464"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 22 [/DQ5] of J1 on F.Cu",
+                    "pos": {
+                        "x": 138.02,
+                        "y": 109.5014
+                    },
+                    "uuid": "81ac124d-1933-4a2b-a689-9ac7a0d52efe"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 22 [/DQ5] of J1 on B.Cu",
+                    "pos": {
+                        "x": 138.02,
+                        "y": 109.5014
+                    },
+                    "uuid": "0e110566-8e88-4648-8ff2-4e1574e709f6"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 23 [/DQ21] of J1 on F.Cu",
+                    "pos": {
+                        "x": 139.29,
+                        "y": 109.5014
+                    },
+                    "uuid": "530eb9e1-d735-4b1c-82ec-207db6b610e7"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 23 [/DQ21] of J1 on B.Cu",
+                    "pos": {
+                        "x": 139.29,
+                        "y": 109.5014
+                    },
+                    "uuid": "162078b4-146b-46e8-bb6b-1922b425fbb3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 24 [/DQ6] of J1 on F.Cu",
+                    "pos": {
+                        "x": 140.56,
+                        "y": 109.5014
+                    },
+                    "uuid": "f5d77ec9-851a-4299-ab2a-d0740a6923b0"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 24 [/DQ6] of J1 on B.Cu",
+                    "pos": {
+                        "x": 140.56,
+                        "y": 109.5014
+                    },
+                    "uuid": "cfe8d722-0017-4eea-86ab-3bdf743f1e7f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 25 [/DQ22] of J1 on F.Cu",
+                    "pos": {
+                        "x": 141.83,
+                        "y": 109.5014
+                    },
+                    "uuid": "98c4594f-f0d8-419e-846a-1d6f96dcdc1d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 25 [/DQ22] of J1 on B.Cu",
+                    "pos": {
+                        "x": 141.83,
+                        "y": 109.5014
+                    },
+                    "uuid": "40efaf66-b8bb-4160-bce1-ea99f7be4cdd"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 26 [/DQ7] of J1 on F.Cu",
+                    "pos": {
+                        "x": 143.1,
+                        "y": 109.5014
+                    },
+                    "uuid": "e9339038-b1bd-4aa9-94b0-e7c6542170b3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 26 [/DQ7] of J1 on B.Cu",
+                    "pos": {
+                        "x": 143.1,
+                        "y": 109.5014
+                    },
+                    "uuid": "ba502df9-ea92-4e24-bb1d-5b37da10136f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 27 [/DQ23] of J1 on F.Cu",
+                    "pos": {
+                        "x": 144.37,
+                        "y": 109.5014
+                    },
+                    "uuid": "f6598931-94da-4412-8d92-ea8a88efc763"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 27 [/DQ23] of J1 on B.Cu",
+                    "pos": {
+                        "x": 144.37,
+                        "y": 109.5014
+                    },
+                    "uuid": "7652172c-b2c7-48dd-adc9-ed8a6d9ab9df"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 28 [/A7] of J1 on F.Cu",
+                    "pos": {
+                        "x": 145.64,
+                        "y": 109.5014
+                    },
+                    "uuid": "75b14229-e7f1-4d82-8631-d79e186e8873"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 28 [/A7] of J1 on B.Cu",
+                    "pos": {
+                        "x": 145.64,
+                        "y": 109.5014
+                    },
+                    "uuid": "81297d8f-c1cf-4f70-bca2-35b19fbb135a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 29 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 146.91,
+                        "y": 109.5014
+                    },
+                    "uuid": "f0f21468-417d-4658-bf47-dccfb8d82ebf"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 29 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 146.91,
+                        "y": 109.5014
+                    },
+                    "uuid": "48efcae8-abb5-4e59-9bd8-c11b1e003a82"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 30 [/+5V] of J1 on F.Cu",
+                    "pos": {
+                        "x": 148.18,
+                        "y": 109.5014
+                    },
+                    "uuid": "1ca67d5e-81b7-4e45-8a59-d66dafacbe7e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 30 [/+5V] of J1 on B.Cu",
+                    "pos": {
+                        "x": 148.18,
+                        "y": 109.5014
+                    },
+                    "uuid": "99713fa1-6dec-40be-b5ad-55278285a005"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 31 [/A8] of J1 on F.Cu",
+                    "pos": {
+                        "x": 149.45,
+                        "y": 109.5014
+                    },
+                    "uuid": "278139fd-1382-4bd5-9aa3-5f65e46a4637"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 31 [/A8] of J1 on B.Cu",
+                    "pos": {
+                        "x": 149.45,
+                        "y": 109.5014
+                    },
+                    "uuid": "b79eaee2-0d53-4fd0-aaed-4e2b96e692c5"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 32 [/A9] of J1 on F.Cu",
+                    "pos": {
+                        "x": 150.72,
+                        "y": 109.5014
+                    },
+                    "uuid": "11204a2a-0335-4538-b902-33f96e3bb84e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 32 [/A9] of J1 on B.Cu",
+                    "pos": {
+                        "x": 150.72,
+                        "y": 109.5014
+                    },
+                    "uuid": "ae21ef03-634c-4946-96c8-bd7f8f17fd68"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 33 [/RAS3_N] of J1 on F.Cu",
+                    "pos": {
+                        "x": 151.99,
+                        "y": 109.5014
+                    },
+                    "uuid": "f586d903-0e6d-4188-9bcd-03d8a84fa28f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 33 [/RAS3_N] of J1 on B.Cu",
+                    "pos": {
+                        "x": 151.99,
+                        "y": 109.5014
+                    },
+                    "uuid": "ccbc0c92-e554-4f48-b1f7-7d3dbf18668d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 34 [/RAS2_N] of J1 on F.Cu",
+                    "pos": {
+                        "x": 153.26,
+                        "y": 109.5014
+                    },
+                    "uuid": "a8d3eebb-d0bb-4d28-915a-67241c2c6f85"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 34 [/RAS2_N] of J1 on B.Cu",
+                    "pos": {
+                        "x": 153.26,
+                        "y": 109.5014
+                    },
+                    "uuid": "48bd172c-61ae-4803-8415-9d8a7a156d61"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 35 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 154.53,
+                        "y": 109.5014
+                    },
+                    "uuid": "245818c3-40a8-42bc-9d7e-8313d0a812b8"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 35 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 154.53,
+                        "y": 109.5014
+                    },
+                    "uuid": "4c8fdb46-0353-4244-a89d-0e55f3f814c2"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 36 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 155.8,
+                        "y": 109.5014
+                    },
+                    "uuid": "63ac0203-e6d3-4033-a5e3-8e6ccd171121"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 107.03,
+                        "y": 111.0
+                    },
+                    "uuid": "01a76f46-566f-4dd0-827f-db2c94bbed6c"
+                },
+                {
+                    "description": "Pad 36 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 155.8,
+                        "y": 109.5014
+                    },
+                    "uuid": "c2e0a600-7e4a-4051-b454-f668fc155851"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 37 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 162.15,
+                        "y": 109.5014
+                    },
+                    "uuid": "3338700d-1215-45ba-bffb-434251427595"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 37 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 162.15,
+                        "y": 109.5014
+                    },
+                    "uuid": "e1bda35d-74e3-4e6a-9779-cbf278fbb2e3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 38 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 163.42,
+                        "y": 109.5014
+                    },
+                    "uuid": "849ece53-ecfb-458a-85d2-86be53f64c56"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 38 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 163.42,
+                        "y": 109.5014
+                    },
+                    "uuid": "0df4b93c-8e04-4e7e-b1fe-685cdfdaad18"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 39 [/GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 164.69,
+                        "y": 109.5014
+                    },
+                    "uuid": "853d6778-0ad3-4339-8686-df57ace47cfa"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 39 [/GND] of J1 on B.Cu",
+                    "pos": {
+                        "x": 164.69,
+                        "y": 109.5014
+                    },
+                    "uuid": "ef61892a-e232-48b5-bcb7-199b55a86329"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 40 [/CAS0_N] of J1 on F.Cu",
+                    "pos": {
+                        "x": 165.96,
+                        "y": 109.5014
+                    },
+                    "uuid": "1d3944d0-b2c0-4cb6-a669-608201349208"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 40 [/CAS0_N] of J1 on B.Cu",
+                    "pos": {
+                        "x": 165.96,
+                        "y": 109.5014
+                    },
+                    "uuid": "667ca84a-8313-40a6-b01f-6778a77dae67"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 41 [/CAS2_N] of J1 on F.Cu",
+                    "pos": {
+                        "x": 167.23,
+                        "y": 109.5014
+                    },
+                    "uuid": "d4f3c375-2a6b-4a0c-a9de-a2adf8c4b9d9"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 41 [/CAS2_N] of J1 on B.Cu",
+                    "pos": {
+                        "x": 167.23,
+                        "y": 109.5014
+                    },
+                    "uuid": "528e461e-76ec-4d2d-83da-ded18b0f98db"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 42 [/CAS3_N] of J1 on F.Cu",
+                    "pos": {
+                        "x": 168.5,
+                        "y": 109.5014
+                    },
+                    "uuid": "3479717d-bade-4a4d-84f1-5f01c3664bce"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 42 [/CAS3_N] of J1 on B.Cu",
+                    "pos": {
+                        "x": 168.5,
+                        "y": 109.5014
+                    },
+                    "uuid": "41f8a9cd-0600-46f3-9de5-35c7453f954c"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 43 [/CAS1_N] of J1 on F.Cu",
+                    "pos": {
+                        "x": 169.77,
+                        "y": 109.5014
+                    },
+                    "uuid": "624736e1-5ced-4cd5-88b1-486489becc41"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 43 [/CAS1_N] of J1 on B.Cu",
+                    "pos": {
+                        "x": 169.77,
+                        "y": 109.5014
+                    },
+                    "uuid": "47de7348-bbd0-4513-85fd-b72a44822f1f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 44 [/RAS0_N] of J1 on F.Cu",
+                    "pos": {
+                        "x": 171.04,
+                        "y": 109.5014
+                    },
+                    "uuid": "3131765a-1b68-4014-86d4-7a141d65c41d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 44 [/RAS0_N] of J1 on B.Cu",
+                    "pos": {
+                        "x": 171.04,
+                        "y": 109.5014
+                    },
+                    "uuid": "d6ea33dc-ea1e-4076-896a-9a1f08970669"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 45 [/RAS1_N] of J1 on F.Cu",
+                    "pos": {
+                        "x": 172.31,
+                        "y": 109.5014
+                    },
+                    "uuid": "399eae4f-8a2b-4ad9-902f-1eb775b488d6"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 45 [/RAS1_N] of J1 on B.Cu",
+                    "pos": {
+                        "x": 172.31,
+                        "y": 109.5014
+                    },
+                    "uuid": "352f2bd0-2934-48d9-8ccb-cdc7f80ef893"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 46 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 173.58,
+                        "y": 109.5014
+                    },
+                    "uuid": "8a49f3b9-215d-4563-a1d5-2d2f8e936c50"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 46 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 173.58,
+                        "y": 109.5014
+                    },
+                    "uuid": "f89c2df5-ec9b-4e17-ae64-5d949cecfa35"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 47 [/WE_N] of J1 on F.Cu",
+                    "pos": {
+                        "x": 174.85,
+                        "y": 109.5014
+                    },
+                    "uuid": "b2dc76b7-cc5b-4b28-94d9-284b2a2cfbc3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 47 [/WE_N] of J1 on B.Cu",
+                    "pos": {
+                        "x": 174.85,
+                        "y": 109.5014
+                    },
+                    "uuid": "423baadf-68d0-4527-b7c5-bf5b661e7518"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 48 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 176.12,
+                        "y": 109.5014
+                    },
+                    "uuid": "1b0556ff-e821-4e56-aec3-93f99b506a07"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 48 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 176.12,
+                        "y": 109.5014
+                    },
+                    "uuid": "7eb007f5-f8bd-43be-9612-efc67cf54eca"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 49 [/DQ8] of J1 on F.Cu",
+                    "pos": {
+                        "x": 177.39,
+                        "y": 109.5014
+                    },
+                    "uuid": "c7c1b849-cd8a-4af9-823d-51a5f9a3e1e8"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 49 [/DQ8] of J1 on B.Cu",
+                    "pos": {
+                        "x": 177.39,
+                        "y": 109.5014
+                    },
+                    "uuid": "aa5cf75a-4540-42d9-a4a5-197343309d88"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 50 [/DQ24] of J1 on F.Cu",
+                    "pos": {
+                        "x": 178.66,
+                        "y": 109.5014
+                    },
+                    "uuid": "5ccb8f9e-7f87-4371-b638-d9fb35a7952d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 50 [/DQ24] of J1 on B.Cu",
+                    "pos": {
+                        "x": 178.66,
+                        "y": 109.5014
+                    },
+                    "uuid": "239d53a1-4969-4877-bdfc-73c6db132bb4"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 51 [/DQ9] of J1 on F.Cu",
+                    "pos": {
+                        "x": 179.93,
+                        "y": 109.5014
+                    },
+                    "uuid": "1f60e898-ed2d-42bb-a798-725978d526c1"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 51 [/DQ9] of J1 on B.Cu",
+                    "pos": {
+                        "x": 179.93,
+                        "y": 109.5014
+                    },
+                    "uuid": "a7998dfd-03ef-4f40-94a5-94d263e01768"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 52 [/DQ25] of J1 on F.Cu",
+                    "pos": {
+                        "x": 181.2,
+                        "y": 109.5014
+                    },
+                    "uuid": "d24ddb1e-ca32-4dab-8540-1be739b03ba3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 52 [/DQ25] of J1 on B.Cu",
+                    "pos": {
+                        "x": 181.2,
+                        "y": 109.5014
+                    },
+                    "uuid": "925ef9f9-9148-4032-9f7e-3e2c389c9387"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 53 [/DQ10] of J1 on F.Cu",
+                    "pos": {
+                        "x": 182.47,
+                        "y": 109.5014
+                    },
+                    "uuid": "20de0ff0-3039-41db-a1d9-b3d860aa2514"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 53 [/DQ10] of J1 on B.Cu",
+                    "pos": {
+                        "x": 182.47,
+                        "y": 109.5014
+                    },
+                    "uuid": "76653467-b1c9-4a75-9760-a8ad7a6b179b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 54 [/DQ26] of J1 on F.Cu",
+                    "pos": {
+                        "x": 183.74,
+                        "y": 109.5014
+                    },
+                    "uuid": "3c014d5d-594e-4909-a544-27ee0971f4d9"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 54 [/DQ26] of J1 on B.Cu",
+                    "pos": {
+                        "x": 183.74,
+                        "y": 109.5014
+                    },
+                    "uuid": "f1a26f91-8661-4fc2-b5e9-6987599da317"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 55 [/DQ11] of J1 on F.Cu",
+                    "pos": {
+                        "x": 185.01,
+                        "y": 109.5014
+                    },
+                    "uuid": "074f67bd-805d-4f75-bfdc-bc8bd047e02b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 55 [/DQ11] of J1 on B.Cu",
+                    "pos": {
+                        "x": 185.01,
+                        "y": 109.5014
+                    },
+                    "uuid": "7385d302-35d9-4330-92aa-064aa27900c1"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 56 [/DQ27] of J1 on F.Cu",
+                    "pos": {
+                        "x": 186.28,
+                        "y": 109.5014
+                    },
+                    "uuid": "be5ed8aa-a243-49f2-bd7f-17b50a963f2f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 56 [/DQ27] of J1 on B.Cu",
+                    "pos": {
+                        "x": 186.28,
+                        "y": 109.5014
+                    },
+                    "uuid": "a8343c4c-bc85-465f-84d8-51a8dfb825c3"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 57 [/DQ12] of J1 on F.Cu",
+                    "pos": {
+                        "x": 187.55,
+                        "y": 109.5014
+                    },
+                    "uuid": "109d7f7a-6210-4a42-96e4-90148bb86fbb"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 57 [/DQ12] of J1 on B.Cu",
+                    "pos": {
+                        "x": 187.55,
+                        "y": 109.5014
+                    },
+                    "uuid": "f58cc105-51fd-4e21-af63-5d4040f24aab"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 58 [/DQ28] of J1 on F.Cu",
+                    "pos": {
+                        "x": 188.82,
+                        "y": 109.5014
+                    },
+                    "uuid": "88581a73-8822-4e0d-9b9b-744d8212276d"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 58 [/DQ28] of J1 on B.Cu",
+                    "pos": {
+                        "x": 188.82,
+                        "y": 109.5014
+                    },
+                    "uuid": "17151740-3b7f-4a33-be3b-fd95cfe4b2bf"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 59 [/+5V] of J1 on F.Cu",
+                    "pos": {
+                        "x": 190.09,
+                        "y": 109.5014
+                    },
+                    "uuid": "3879d8e9-76f4-4762-937e-a0a1e1151ed5"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 59 [/+5V] of J1 on B.Cu",
+                    "pos": {
+                        "x": 190.09,
+                        "y": 109.5014
+                    },
+                    "uuid": "c1dd19c9-1594-439b-aa95-10a397721cfd"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 60 [/DQ29] of J1 on F.Cu",
+                    "pos": {
+                        "x": 191.36,
+                        "y": 109.5014
+                    },
+                    "uuid": "376828ee-cfda-4c73-a994-8cfc9131dc2e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 60 [/DQ29] of J1 on B.Cu",
+                    "pos": {
+                        "x": 191.36,
+                        "y": 109.5014
+                    },
+                    "uuid": "880d0acf-e71a-4203-adfe-707b64efa016"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 61 [/DQ13] of J1 on F.Cu",
+                    "pos": {
+                        "x": 192.63,
+                        "y": 109.5014
+                    },
+                    "uuid": "0ca71925-e2d6-4bdf-857a-09cdf92ea9bc"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 61 [/DQ13] of J1 on B.Cu",
+                    "pos": {
+                        "x": 192.63,
+                        "y": 109.5014
+                    },
+                    "uuid": "e3c176fd-bb37-4d49-ac42-04fb4a87da2e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 62 [/DQ30] of J1 on F.Cu",
+                    "pos": {
+                        "x": 193.9,
+                        "y": 109.5014
+                    },
+                    "uuid": "3afe692f-8283-4c85-8fc9-8c9ed8f4e4ab"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 62 [/DQ30] of J1 on B.Cu",
+                    "pos": {
+                        "x": 193.9,
+                        "y": 109.5014
+                    },
+                    "uuid": "4f108ebe-1127-492f-8f1b-e8bdbf16b07e"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 63 [/DQ14] of J1 on F.Cu",
+                    "pos": {
+                        "x": 195.17,
+                        "y": 109.5014
+                    },
+                    "uuid": "b5f09ddc-c875-4094-8e3a-39b4e41002cf"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 63 [/DQ14] of J1 on B.Cu",
+                    "pos": {
+                        "x": 195.17,
+                        "y": 109.5014
+                    },
+                    "uuid": "99861d49-3f1e-4ff8-b7de-9983f95873d9"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 64 [/DQ31] of J1 on F.Cu",
+                    "pos": {
+                        "x": 196.44,
+                        "y": 109.5014
+                    },
+                    "uuid": "adfc103d-5ee5-4e2c-80a3-3a4824c47c50"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 64 [/DQ31] of J1 on B.Cu",
+                    "pos": {
+                        "x": 196.44,
+                        "y": 109.5014
+                    },
+                    "uuid": "ce7003f5-5494-4639-a77a-17e18ba8ed5a"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 65 [/DQ15] of J1 on F.Cu",
+                    "pos": {
+                        "x": 197.71,
+                        "y": 109.5014
+                    },
+                    "uuid": "1eea3e09-dce6-4e93-a2eb-c9c5457478d7"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 65 [/DQ15] of J1 on B.Cu",
+                    "pos": {
+                        "x": 197.71,
+                        "y": 109.5014
+                    },
+                    "uuid": "a814aa66-57da-4daa-b6e0-0c22ace3ca57"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 66 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 198.98,
+                        "y": 109.5014
+                    },
+                    "uuid": "ac72aed8-47fc-4872-b75b-879e819ee887"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 66 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 198.98,
+                        "y": 109.5014
+                    },
+                    "uuid": "d7953cbe-4d0c-477d-9bdc-0599d90bcc33"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 67 [/PD1] of J1 on F.Cu",
+                    "pos": {
+                        "x": 200.25,
+                        "y": 109.5014
+                    },
+                    "uuid": "17655c33-2d6c-4bf8-9a87-540543a26b9f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 67 [/PD1] of J1 on B.Cu",
+                    "pos": {
+                        "x": 200.25,
+                        "y": 109.5014
+                    },
+                    "uuid": "a2ab6471-b2f7-48b6-9d80-174c96b62983"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 68 [/PD2] of J1 on F.Cu",
+                    "pos": {
+                        "x": 201.52,
+                        "y": 109.5014
+                    },
+                    "uuid": "02667ce7-8a76-44cc-8127-f65642e3e855"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 68 [/PD2] of J1 on B.Cu",
+                    "pos": {
+                        "x": 201.52,
+                        "y": 109.5014
+                    },
+                    "uuid": "0aa554f8-c211-4e81-bbab-515441f4601b"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 69 [/PD3] of J1 on F.Cu",
+                    "pos": {
+                        "x": 202.79,
+                        "y": 109.5014
+                    },
+                    "uuid": "616778f1-a020-4133-9e2c-3d4855a13688"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 69 [/PD3] of J1 on B.Cu",
+                    "pos": {
+                        "x": 202.79,
+                        "y": 109.5014
+                    },
+                    "uuid": "a2600ad7-c3d6-498b-9889-6898686978f6"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 70 [/PD4] of J1 on F.Cu",
+                    "pos": {
+                        "x": 204.06,
+                        "y": 109.5014
+                    },
+                    "uuid": "505b8be5-a2fd-4fcd-8410-600d4ae8b9f8"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 70 [/PD4] of J1 on B.Cu",
+                    "pos": {
+                        "x": 204.06,
+                        "y": 109.5014
+                    },
+                    "uuid": "58824f35-1e09-430b-8873-26d85e2ff246"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 71 [<no net>] of J1 on F.Cu",
+                    "pos": {
+                        "x": 205.33,
+                        "y": 109.5014
+                    },
+                    "uuid": "6fd90547-1c07-412d-a9bc-940f28d892ca"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 71 [<no net>] of J1 on B.Cu",
+                    "pos": {
+                        "x": 205.33,
+                        "y": 109.5014
+                    },
+                    "uuid": "a7bad3a3-74a6-4758-a3f4-3eff78629918"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 72 [/GND] of J1 on F.Cu",
+                    "pos": {
+                        "x": 206.6,
+                        "y": 109.5014
+                    },
+                    "uuid": "ed7baec5-dbbf-4b95-9cfd-becb70286849"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        },
+        {
+            "description": "Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2286 mm)",
+            "items": [
+                {
+                    "description": "Segment on Edge.Cuts",
+                    "pos": {
+                        "x": 160.5498,
+                        "y": 111.0
+                    },
+                    "uuid": "6c7877ec-3f23-444c-8e29-7f6b4710529e"
+                },
+                {
+                    "description": "Pad 72 [/GND] of J1 on B.Cu",
+                    "pos": {
+                        "x": 206.6,
+                        "y": 109.5014
+                    },
+                    "uuid": "73f0b6e8-bc3f-4df0-a5a6-58d871cb010f"
+                }
+            ],
+            "severity": "error",
+            "type": "copper_edge_clearance"
+        }
+    ]
+}

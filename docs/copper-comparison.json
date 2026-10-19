@@ -1,0 +1,443 @@
+{
+  "result": "PASS",
+  "method": "Exact Decimal comparison of saved native geometry. Net IDs resolve to names; layer IDs resolve through native layer names. RPD1-RPD4 and PD1-PD4 are reference aliases. Object UUIDs, whitespace, save order, polygon starting vertices and polygon winding do not affect the result.",
+  "files": {
+    "A6_reference": {
+      "filename": "copper-reference-A6.kicad_pcb",
+      "native_file_sha256": "6cfa72e0f8b486be5644dbfe0fd81b1854d0e7880b6ae8f9a5ce642dc426458b",
+      "counts": {
+        "tracks": 864,
+        "vias": 195,
+        "pads": 336,
+        "component_placements": 17,
+        "board_outline": 13,
+        "zone_outlines": 2,
+        "filled_zone_polygons": 10,
+        "other_copper_graphics": 0,
+        "copper_layer_stack": 1,
+        "board_thickness": 1
+      },
+      "canonical_geometry_sha256": {
+        "tracks": "6519b2d453000776c493c500a016da0c45c88cf0a5b0728f3b8fc6781ddbd746",
+        "vias": "fea7d7d9dded4ad135c5e3ec61b7b95512e4b5564f14970507bf56708aa591ba",
+        "pads": "b49ee27fdc29f588fc2c7b46d785e9c3cd22646a12db1435d393e39f0e76ae32",
+        "component_placements": "0cd271e3dd0b08700828ae588619e3e6690fbd12c831f89dcb3eb4462d4c411b",
+        "board_outline": "36b85c9c996f7a93f3f45da0c86dfd03032a34749b41b3b6e04c87a0ae294d13",
+        "zone_outlines": "17f2d0cf6f90e5a26b360fd88cddd5e77cc71f21a99a32c1e7ac3717d8c3493d",
+        "filled_zone_polygons": "48017f68de960df058d650ae189a49d54a5cc6e848e5454db44b4837a11893b2",
+        "other_copper_graphics": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "copper_layer_stack": "197c9c6e72e18ca3123af7381d1ec48e579da1936d16f883e633a452f17a5389",
+        "board_thickness": "2387a9e70ebcfb1ea2a781b548ab31f719e86d13e97851f6864e09801e7450ac"
+      },
+      "saved_zone_attributes": [
+        {
+          "net": "/GND",
+          "layer": [
+            "In1.Cu"
+          ],
+          "filled_areas_thickness": [
+            "no"
+          ],
+          "fill": [
+            "yes",
+            [
+              "thermal_gap",
+              "0.5"
+            ],
+            [
+              "thermal_bridge_width",
+              "0.5"
+            ]
+          ]
+        },
+        {
+          "net": "/+5V",
+          "layer": [
+            "In2.Cu"
+          ],
+          "filled_areas_thickness": [
+            "no"
+          ],
+          "fill": [
+            "yes",
+            [
+              "thermal_gap",
+              "0.5"
+            ],
+            [
+              "thermal_bridge_width",
+              "0.5"
+            ]
+          ]
+        }
+      ]
+    },
+    "user_uploaded_PCB": {
+      "filename": "user-silkscreen-reference.kicad_pcb",
+      "native_file_sha256": "f96539f0a508eb2cfafc21c871a8ea2691b73abbe3ab032b2619d46f9d04a014",
+      "counts": {
+        "tracks": 864,
+        "vias": 195,
+        "pads": 336,
+        "component_placements": 17,
+        "board_outline": 13,
+        "zone_outlines": 2,
+        "filled_zone_polygons": 10,
+        "other_copper_graphics": 0,
+        "copper_layer_stack": 1,
+        "board_thickness": 1
+      },
+      "canonical_geometry_sha256": {
+        "tracks": "6519b2d453000776c493c500a016da0c45c88cf0a5b0728f3b8fc6781ddbd746",
+        "vias": "fea7d7d9dded4ad135c5e3ec61b7b95512e4b5564f14970507bf56708aa591ba",
+        "pads": "b49ee27fdc29f588fc2c7b46d785e9c3cd22646a12db1435d393e39f0e76ae32",
+        "component_placements": "0cd271e3dd0b08700828ae588619e3e6690fbd12c831f89dcb3eb4462d4c411b",
+        "board_outline": "36b85c9c996f7a93f3f45da0c86dfd03032a34749b41b3b6e04c87a0ae294d13",
+        "zone_outlines": "17f2d0cf6f90e5a26b360fd88cddd5e77cc71f21a99a32c1e7ac3717d8c3493d",
+        "filled_zone_polygons": "48017f68de960df058d650ae189a49d54a5cc6e848e5454db44b4837a11893b2",
+        "other_copper_graphics": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "copper_layer_stack": "197c9c6e72e18ca3123af7381d1ec48e579da1936d16f883e633a452f17a5389",
+        "board_thickness": "2387a9e70ebcfb1ea2a781b548ab31f719e86d13e97851f6864e09801e7450ac"
+      },
+      "saved_zone_attributes": [
+        {
+          "net": "/GND",
+          "layer": [
+            "In1.Cu"
+          ],
+          "filled_areas_thickness": [],
+          "fill": [
+            "yes",
+            [
+              "thermal_gap",
+              "0.5"
+            ],
+            [
+              "thermal_bridge_width",
+              "0.5"
+            ],
+            [
+              "island_removal_mode",
+              "0"
+            ]
+          ]
+        },
+        {
+          "net": "/+5V",
+          "layer": [
+            "In2.Cu"
+          ],
+          "filled_areas_thickness": [],
+          "fill": [
+            "yes",
+            [
+              "thermal_gap",
+              "0.5"
+            ],
+            [
+              "thermal_bridge_width",
+              "0.5"
+            ],
+            [
+              "island_removal_mode",
+              "0"
+            ]
+          ]
+        }
+      ]
+    },
+    "final_PCB": {
+      "filename": "HY8M-SIMM.kicad_pcb",
+      "native_file_sha256": "d8f85c1c56e4a714a24b207beaf72cefbaef4fc62e5805e96cf1508029d5352e",
+      "counts": {
+        "tracks": 864,
+        "vias": 195,
+        "pads": 336,
+        "component_placements": 17,
+        "board_outline": 13,
+        "zone_outlines": 2,
+        "filled_zone_polygons": 10,
+        "other_copper_graphics": 0,
+        "copper_layer_stack": 1,
+        "board_thickness": 1
+      },
+      "canonical_geometry_sha256": {
+        "tracks": "6519b2d453000776c493c500a016da0c45c88cf0a5b0728f3b8fc6781ddbd746",
+        "vias": "fea7d7d9dded4ad135c5e3ec61b7b95512e4b5564f14970507bf56708aa591ba",
+        "pads": "b49ee27fdc29f588fc2c7b46d785e9c3cd22646a12db1435d393e39f0e76ae32",
+        "component_placements": "0cd271e3dd0b08700828ae588619e3e6690fbd12c831f89dcb3eb4462d4c411b",
+        "board_outline": "36b85c9c996f7a93f3f45da0c86dfd03032a34749b41b3b6e04c87a0ae294d13",
+        "zone_outlines": "17f2d0cf6f90e5a26b360fd88cddd5e77cc71f21a99a32c1e7ac3717d8c3493d",
+        "filled_zone_polygons": "48017f68de960df058d650ae189a49d54a5cc6e848e5454db44b4837a11893b2",
+        "other_copper_graphics": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "copper_layer_stack": "197c9c6e72e18ca3123af7381d1ec48e579da1936d16f883e633a452f17a5389",
+        "board_thickness": "2387a9e70ebcfb1ea2a781b548ab31f719e86d13e97851f6864e09801e7450ac"
+      },
+      "saved_zone_attributes": [
+        {
+          "net": "/GND",
+          "layer": [
+            "In1.Cu"
+          ],
+          "filled_areas_thickness": [],
+          "fill": [
+            "yes",
+            [
+              "thermal_gap",
+              "0.5"
+            ],
+            [
+              "thermal_bridge_width",
+              "0.5"
+            ],
+            [
+              "island_removal_mode",
+              "0"
+            ]
+          ]
+        },
+        {
+          "net": "/+5V",
+          "layer": [
+            "In2.Cu"
+          ],
+          "filled_areas_thickness": [],
+          "fill": [
+            "yes",
+            [
+              "thermal_gap",
+              "0.5"
+            ],
+            [
+              "thermal_bridge_width",
+              "0.5"
+            ],
+            [
+              "island_removal_mode",
+              "0"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "comparisons": {
+    "A6_vs_user_upload": {
+      "tracks": {
+        "identical": true
+      },
+      "vias": {
+        "identical": true
+      },
+      "pads": {
+        "identical": true
+      },
+      "component_placements": {
+        "identical": true
+      },
+      "board_outline": {
+        "identical": true
+      },
+      "zone_outlines": {
+        "identical": true
+      },
+      "filled_zone_polygons": {
+        "identical": true
+      },
+      "other_copper_graphics": {
+        "identical": true
+      },
+      "copper_layer_stack": {
+        "identical": true
+      },
+      "board_thickness": {
+        "identical": true
+      }
+    },
+    "A6_vs_final": {
+      "tracks": {
+        "identical": true
+      },
+      "vias": {
+        "identical": true
+      },
+      "pads": {
+        "identical": true
+      },
+      "component_placements": {
+        "identical": true
+      },
+      "board_outline": {
+        "identical": true
+      },
+      "zone_outlines": {
+        "identical": true
+      },
+      "filled_zone_polygons": {
+        "identical": true
+      },
+      "other_copper_graphics": {
+        "identical": true
+      },
+      "copper_layer_stack": {
+        "identical": true
+      },
+      "board_thickness": {
+        "identical": true
+      }
+    },
+    "user_upload_vs_final": {
+      "tracks": {
+        "identical": true
+      },
+      "vias": {
+        "identical": true
+      },
+      "pads": {
+        "identical": true
+      },
+      "component_placements": {
+        "identical": true
+      },
+      "board_outline": {
+        "identical": true
+      },
+      "zone_outlines": {
+        "identical": true
+      },
+      "filled_zone_polygons": {
+        "identical": true
+      },
+      "other_copper_graphics": {
+        "identical": true
+      },
+      "copper_layer_stack": {
+        "identical": true
+      },
+      "board_thickness": {
+        "identical": true
+      }
+    }
+  },
+  "historical_A3_to_A6_audit": [
+    {
+      "revision": "A3-4Layer",
+      "native_file_sha256": "d18ebd9610cf5aacb079e09870d238fe38a214e46122209507661d99dc60998b",
+      "canonical_geometry_sha256": {
+        "tracks": "6519b2d453000776c493c500a016da0c45c88cf0a5b0728f3b8fc6781ddbd746",
+        "vias": "fea7d7d9dded4ad135c5e3ec61b7b95512e4b5564f14970507bf56708aa591ba",
+        "pads": "b49ee27fdc29f588fc2c7b46d785e9c3cd22646a12db1435d393e39f0e76ae32",
+        "component_placements": "0cd271e3dd0b08700828ae588619e3e6690fbd12c831f89dcb3eb4462d4c411b",
+        "board_outline": "36b85c9c996f7a93f3f45da0c86dfd03032a34749b41b3b6e04c87a0ae294d13",
+        "zone_outlines": "17f2d0cf6f90e5a26b360fd88cddd5e77cc71f21a99a32c1e7ac3717d8c3493d",
+        "filled_zone_polygons": "48017f68de960df058d650ae189a49d54a5cc6e848e5454db44b4837a11893b2",
+        "other_copper_graphics": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "copper_layer_stack": "197c9c6e72e18ca3123af7381d1ec48e579da1936d16f883e633a452f17a5389",
+        "board_thickness": "2387a9e70ebcfb1ea2a781b548ab31f719e86d13e97851f6864e09801e7450ac"
+      },
+      "counts": {
+        "tracks": 864,
+        "vias": 195,
+        "pads": 336,
+        "component_placements": 17,
+        "board_outline": 13,
+        "zone_outlines": 2,
+        "filled_zone_polygons": 10,
+        "other_copper_graphics": 0,
+        "copper_layer_stack": 1,
+        "board_thickness": 1
+      }
+    },
+    {
+      "revision": "A4-Showpiece",
+      "native_file_sha256": "e07668d8e1762ac16fe11fe61163c9728c7ebff15b636b04b8963a3766476741",
+      "canonical_geometry_sha256": {
+        "tracks": "6519b2d453000776c493c500a016da0c45c88cf0a5b0728f3b8fc6781ddbd746",
+        "vias": "fea7d7d9dded4ad135c5e3ec61b7b95512e4b5564f14970507bf56708aa591ba",
+        "pads": "b49ee27fdc29f588fc2c7b46d785e9c3cd22646a12db1435d393e39f0e76ae32",
+        "component_placements": "0cd271e3dd0b08700828ae588619e3e6690fbd12c831f89dcb3eb4462d4c411b",
+        "board_outline": "36b85c9c996f7a93f3f45da0c86dfd03032a34749b41b3b6e04c87a0ae294d13",
+        "zone_outlines": "17f2d0cf6f90e5a26b360fd88cddd5e77cc71f21a99a32c1e7ac3717d8c3493d",
+        "filled_zone_polygons": "48017f68de960df058d650ae189a49d54a5cc6e848e5454db44b4837a11893b2",
+        "other_copper_graphics": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "copper_layer_stack": "197c9c6e72e18ca3123af7381d1ec48e579da1936d16f883e633a452f17a5389",
+        "board_thickness": "2387a9e70ebcfb1ea2a781b548ab31f719e86d13e97851f6864e09801e7450ac"
+      },
+      "counts": {
+        "tracks": 864,
+        "vias": 195,
+        "pads": 336,
+        "component_placements": 17,
+        "board_outline": 13,
+        "zone_outlines": 2,
+        "filled_zone_polygons": 10,
+        "other_copper_graphics": 0,
+        "copper_layer_stack": 1,
+        "board_thickness": 1
+      }
+    },
+    {
+      "revision": "A5-Showpiece",
+      "native_file_sha256": "5e3c8978c20298230ecc2f4772475a2b7964594f1a03658afea0441a90998d33",
+      "canonical_geometry_sha256": {
+        "tracks": "6519b2d453000776c493c500a016da0c45c88cf0a5b0728f3b8fc6781ddbd746",
+        "vias": "fea7d7d9dded4ad135c5e3ec61b7b95512e4b5564f14970507bf56708aa591ba",
+        "pads": "b49ee27fdc29f588fc2c7b46d785e9c3cd22646a12db1435d393e39f0e76ae32",
+        "component_placements": "0cd271e3dd0b08700828ae588619e3e6690fbd12c831f89dcb3eb4462d4c411b",
+        "board_outline": "36b85c9c996f7a93f3f45da0c86dfd03032a34749b41b3b6e04c87a0ae294d13",
+        "zone_outlines": "17f2d0cf6f90e5a26b360fd88cddd5e77cc71f21a99a32c1e7ac3717d8c3493d",
+        "filled_zone_polygons": "48017f68de960df058d650ae189a49d54a5cc6e848e5454db44b4837a11893b2",
+        "other_copper_graphics": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "copper_layer_stack": "197c9c6e72e18ca3123af7381d1ec48e579da1936d16f883e633a452f17a5389",
+        "board_thickness": "2387a9e70ebcfb1ea2a781b548ab31f719e86d13e97851f6864e09801e7450ac"
+      },
+      "counts": {
+        "tracks": 864,
+        "vias": 195,
+        "pads": 336,
+        "component_placements": 17,
+        "board_outline": 13,
+        "zone_outlines": 2,
+        "filled_zone_polygons": 10,
+        "other_copper_graphics": 0,
+        "copper_layer_stack": 1,
+        "board_thickness": 1
+      }
+    },
+    {
+      "revision": "A6-Showpiece",
+      "native_file_sha256": "6cfa72e0f8b486be5644dbfe0fd81b1854d0e7880b6ae8f9a5ce642dc426458b",
+      "canonical_geometry_sha256": {
+        "tracks": "6519b2d453000776c493c500a016da0c45c88cf0a5b0728f3b8fc6781ddbd746",
+        "vias": "fea7d7d9dded4ad135c5e3ec61b7b95512e4b5564f14970507bf56708aa591ba",
+        "pads": "b49ee27fdc29f588fc2c7b46d785e9c3cd22646a12db1435d393e39f0e76ae32",
+        "component_placements": "0cd271e3dd0b08700828ae588619e3e6690fbd12c831f89dcb3eb4462d4c411b",
+        "board_outline": "36b85c9c996f7a93f3f45da0c86dfd03032a34749b41b3b6e04c87a0ae294d13",
+        "zone_outlines": "17f2d0cf6f90e5a26b360fd88cddd5e77cc71f21a99a32c1e7ac3717d8c3493d",
+        "filled_zone_polygons": "48017f68de960df058d650ae189a49d54a5cc6e848e5454db44b4837a11893b2",
+        "other_copper_graphics": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "copper_layer_stack": "197c9c6e72e18ca3123af7381d1ec48e579da1936d16f883e633a452f17a5389",
+        "board_thickness": "2387a9e70ebcfb1ea2a781b548ab31f719e86d13e97851f6864e09801e7450ac"
+      },
+      "counts": {
+        "tracks": 864,
+        "vias": 195,
+        "pads": 336,
+        "component_placements": 17,
+        "board_outline": 13,
+        "zone_outlines": 2,
+        "filled_zone_polygons": 10,
+        "other_copper_graphics": 0,
+        "copper_layer_stack": 1,
+        "board_thickness": 1
+      }
+    }
+  ],
+  "historical_geometry_matches_retained_A6": true,
+  "notes": [
+    "Silkscreen artwork, text placement, graphic logos, title blocks and padless logo footprints are intentionally outside this copper/mechanical comparison.",
+    "The user's upload already renames RPD1-RPD4 to PD1-PD4. This changes the component references, not their pads, positions or electrical nets.",
+    "KiCad 10 omits the old filled_areas_thickness=no field and explicitly saves island_removal_mode=0. Saved zone outlines and all filled copper polygon vertices are compared independently; the attribute snapshots are recorded for review.",
+    "This audit compares saved native artwork. It does not refill zones, run DRC, or establish hardware operation."
+  ]
+}

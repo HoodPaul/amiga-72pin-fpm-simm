@@ -32,6 +32,40 @@ pads use ENIG. Gold/nickel thickness fields in both the edge-connector and
 combined-finish selections should agree. These process requirements are not
 encoded by the Gerber artwork alone.
 
+## Ordering screenshot reminders
+
+These screenshots were supplied on **19 October 2026** to record the PCBWay
+order selections. Use them alongside the settings above and the four-layer
+file map below. Manufacturer engineering approval of the contact/bevel
+geometry and finished stack-up is still outstanding.
+
+### Main order settings
+
+Black solder mask, white silkscreen, 1.2 mm finished thickness, 6/6 mil
+capability, 0.30 mm minimum drill and 1 oz outer/inner copper. **Remove product
+No.: Yes** means the manufacturer's product number should be omitted.
+The pictured **45-degree bevel remains subject to engineering approval**.
+
+![PCBWay main order selections](pcb-ordering/pcbway-order-settings.png)
+
+### Gold-finger plating
+
+The edge-connector selection is hard gold, **Au 30 microinch over Ni
+120 microinch**. This should agree with the selective-finish setting below.
+
+![PCBWay hard-gold finger thickness selection](pcb-ordering/pcbway-gold-finger-plating.png)
+
+### Selective finish and plating note
+
+The combined finish is **immersion gold plus selective hard gold**:
+1 microinch immersion gold on the component pads, with Au 30 microinch over
+Ni 120 microinch hard gold on the SIMM fingers. The screenshot records this
+note for the manufacturer:
+
+> hard gold on all 72 SIMM edge contacts on both faces, with ENIG on the remaining component pads
+
+![PCBWay selective finish, thickness and contact-area note](pcb-ordering/pcbway-selective-finish.png)
+
 ## Physical layer order
 
 | Layer | Gerber |

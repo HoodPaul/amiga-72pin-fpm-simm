@@ -101,6 +101,7 @@ The current silkscreen preserves the manually edited layout, with UK Computing a
 | [source/](source/) | Artwork baseline, reference PCB and development/verification tools |
 | [Assembly guide](docs/ASSEMBLY.md) | 70 ns parts, fitting and system quantities |
 | [Fabrication options](docs/FABRICATION-OPTIONS.md) | Quotation selections and open bevel review |
+| [PCB ordering screenshots](docs/FABRICATION-OPTIONS.md#ordering-screenshot-reminders) | PCBWay settings, hard-gold thickness and selective-finish reminders |
 | [Project history](docs/PROJECT-HISTORY.md) | A1–A7 development record |
 | [NOTICE.md](NOTICE.md) | Template attribution and supplied artwork |
 

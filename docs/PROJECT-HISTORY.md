@@ -39,15 +39,39 @@ RPD1–RPD4 in older files and PD1–PD4 in A7 are component-reference aliases. 
 
 An A7 packaging review removed two obsolete A6 inner-layer Gerber duplicates. The native PCB and current A7 exports were unchanged. The corrected package contains exactly four copper layers, described in [layer-file-map.txt](layer-file-map.txt) and the Gerber job manifest.
 
-## Status carried forward
+## Manufacturing progress
 
-**19 October 2026:** donor components have been ordered and the PCB order has
-been submitted. The PCB is awaiting the manufacturer's engineering verification
-and approval before manufacture. Assembly and hardware testing are still to
-follow.
+**19 October 2026:** donor components were ordered and PCBWay quotation/order
+settings were documented, including selective hard gold and a proposed bevel.
+
+**20 October 2026:** the PCBWay price was too high for this prototype batch, so
+the project moved to JLCPCB. An order for **15 boards** was placed with four
+layers, nominal 1.2 mm thickness, 1 oz inner/outer copper, black mask, white
+silkscreen, ENIG 2 microinch, ink-plugged vias, deburring and no bevel. Edge
+plating, assembly, stencil and manufacturer mark were not selected. The layer
+sequence was explicitly checked against the four-layer file map.
+
+JLCPCB's returned production archive was compared with the original A7 files.
+All fourteen original files matched byte for byte. The processed geometry
+preserves all 72 contacts per face, the functional copper connections, all
+195 via positions, the outline/notch and artwork. CAM compensation, removal
+of isolated inner-layer pads and small dead-end fill tips were reviewed.
+The retaining holes remain 3.18 mm finished, with 3.25 mm compensated tools.
+No functional connection change or production-blocking correction was found.
+See [the detailed review](JLCPCB-PRODUCTION-REVIEW.md).
+
+The order's “1 item Requires Action” was the requested production-file
+confirmation. The review supports confirmation for this prototype batch;
+the website confirmation itself has not been recorded as completed. These
+documentation updates do not change the native A7 PCB or original Gerbers.
 
 No revision has been physically validated in an Amiga. The intended 8 MB assembly providing 2 MB Chip RAM remains an inference from host wiring. CAD connectivity and mapping checks are separate from timing, refresh, fit and hardware testing.
 
-The inherited contact setback remains 0.2286 mm against the 0.50 mm edge rule. Manufacturer acceptance or revised geometry, the bevel process, proposed 1.2 mm stack-up and socket fit remain unresolved. A7 is a routed draft with review Gerbers, not an approved fabrication release.
+The inherited native contact setback remains 0.2286 mm against the 0.50 mm
+generic edge rule; JLCPCB compensation reduces it to approximately 0.221 mm.
+No bevel is selected for this batch. Finished thickness, edge quality, donor
+health, assembly and socket fit still require inspection. A7 remains an
+unvalidated prototype design; the CAM review does not establish hardware
+operation or qualify another manufacturer's process.
 
 See [validation.txt](validation.txt) for current check results and [the README](../README.md) for assembly options, fabrication issues and attribution.

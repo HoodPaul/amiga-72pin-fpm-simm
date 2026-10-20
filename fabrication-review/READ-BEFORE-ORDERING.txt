@@ -1,5 +1,24 @@
 HY8M A7 DRAFT GERBERS: TECHNICAL REVIEW ONLY
 
+STATUS UPDATE, 20 OCTOBER 2026
+
+A fifteen-board JLCPCB prototype order has been placed and the returned CAM
+package has been reviewed. No functional connection change or correction
+blocking prototype manufacture was found. See ../docs/JLCPCB-PRODUCTION-REVIEW.md
+for the exact archive hash, scope and limitations. Website confirmation has
+not been recorded as completed; no assembled board has been tested.
+
+Current order: 1.2 mm nominal, four layers, 1 oz inner/outer copper, black mask,
+white silk, ENIG 2 microinch, ink-plugged vias, no bevel, deburring, no edge
+plating and no manufacturer mark. This replaces the earlier hard-gold/bevel
+proposal for this batch. ENIG is not wear-equivalent to selective hard gold.
+JLCPCB keeps the retaining holes 3.18 mm finished NON_PLATED, using compensated
+3.25 mm tools. CAM removes isolated inner-layer pads and applies etching
+compensation without changing functional connections. Original exports below
+remain unchanged. Detailed order settings: ../docs/FABRICATION-OPTIONS.md.
+
+ORIGINAL EXPORT NOTES (earlier manufacturing proposal)
+
 These files are exported from the four-layer user-edited A7 PCB with the added
 JMC logo. They are not an approved fabrication release.
 

@@ -1,5 +1,97 @@
-# Fabrication options and outstanding review
+# Fabrication options and ordering record
 
+## Current JLCPCB prototype order, 20 October 2026
+
+The first **15-board** order was placed with JLCPCB after the PCBWay quotation
+was too expensive. The processed production archive has been reviewed against
+the original A7 exports, with **no functional connection change or correction
+blocking prototype manufacture found**. The requested production-file
+confirmation accounts for the order's “1 item Requires Action” notice.
+Completion of that website confirmation has not yet been recorded. See the
+[production review](JLCPCB-PRODUCTION-REVIEW.md) for the exact package hash and
+scope. No assembled board has been tested.
+
+| Parameter | Selected JLCPCB option |
+|---|---|
+| Product / delivery | Standard PCB, 15 individual boards, one design |
+| Outline / layers | 107.95 × 25.4 mm / four |
+| Material | FR-4 TG135 |
+| Finished thickness | 1.2 mm nominal; no custom dielectric stack-up specified |
+| Copper | 1 oz outer and 1 oz inner |
+| Solder mask / silkscreen | Black / white |
+| Surface finish | ENIG, 2 microinch gold selected |
+| Layer sequence | Specified explicitly; see table below |
+| Via covering | Plugged with solder-mask ink |
+| Via plating method | Not specified |
+| Minimum via setting | 0.30 mm drill category; design uses 0.60 mm copper diameter |
+| Board outline tolerance | ±0.2 mm regular |
+| Production-file confirmation | Yes |
+| Mark on PCB | Remove mark |
+| Electrical test | Flying probe fully test |
+| Gold fingers | Yes |
+| Bevelling | No |
+| Deburring / edge rounding | Yes |
+| Edge plating | No |
+| Castellated / press-fit / blind slots | No |
+| UL mark / backdrill / humidity card | No |
+| PCB assembly / stencil | Not selected; manual assembly planned |
+
+The **Gold Fingers** selection does not specify electroplated hard gold.
+This batch uses ENIG on exposed pads and contacts, replacing the earlier
+selective hard-gold proposal. ENIG was accepted as the prototype finish;
+hard gold offers better wear resistance for repeated insertion. JLCPCB's
+[finish explanation](https://jlcpcb.com/blog/hard-gold-pcb-finish) describes its
+ENIG service and states that electroplated hard gold is not offered.
+
+**Edge Plating must stay No:** it means metal on the routed board edge and is
+separate from the flat SIMM contact fingers. An early quotation selected this
+unnecessarily; the final screenshots below show it corrected.
+
+### Contact geometry and finished-board checks
+
+The 25.4 mm board height falls below JLCPCB's published 50 × 50 mm minimum for
+bevelling, and the order selects **No bevel**. This records the chosen batch
+process, not a claim that every SIMM/socket combination can use an unbevelled
+edge. JLCPCB also publishes a general 50 mm gold-finger size statement, so
+future orders should obtain engineering acceptance for this short outline.
+See [JLCPCB's gold-finger guidance](https://jlcpcb.com/help/article/jlcpcb-gold-fingers).
+
+The native finger setback is **0.2286 mm**. Reviewed copper compensation leaves
+approximately **0.221 mm**; all contacts and functional connections remain.
+The original 144 DRC findings against the generic 0.50 mm rule stay documented.
+The production review is specific to this returned archive; review any new CAM
+package again rather than assuming another fabricator will process it the same way.
+
+Measure finished connector thickness and inspect edge quality before insertion.
+The [published ±10% thickness tolerance](https://jlcpcb.com/capabilities/pcb-capabilities/) would span 1.08–1.32 mm around
+1.2 mm; fit in the actual socket remains unverified. Do not force the board.
+If manually removing a small FR-4 burr, preserve the plated contact faces.
+There is little spare setback for a substantial hand-cut bevel.
+
+The reviewed CAM confirms the nominal thickness, copper weights, colours,
+ENIG, plugged vias and no bevel. The selected 2 microinch gold thickness and
+deburring are order requirements shown in the screenshots; CAM artwork does
+not certify actual plating thickness, deburring quality or finished tolerances.
+The retaining holes are **3.18 mm finished non-plated**, with 3.25 mm compensated
+drill tools in the production data.
+
+### JLCPCB ordering screenshots
+
+These capture the final quotation selections supplied on **20 October 2026**.
+Displayed prices, delivery estimates and available options are historical;
+they are not a current quotation or the final paid invoice.
+
+![JLCPCB board, quantity, material, thickness and colour settings](pcb-ordering/jlcpcb-board-settings.png)
+
+![JLCPCB finish, copper, vias, testing, no bevel and no edge plating](pcb-ordering/jlcpcb-process-settings.png)
+
+![JLCPCB assembly and stencil services disabled](pcb-ordering/jlcpcb-assembly-settings.png)
+
+![JLCPCB explicit four-layer sequence](pcb-ordering/jlcpcb-layer-sequence.png)
+
+## Historical PCBWay quotation, 19 October 2026
+
+The remainder records the earlier PCBWay quotation, not the current JLCPCB order.
 These are the PCBWay quotation selections discussed on 19 October 2026.
 As of that date, donor components have been ordered and the PCB order has been
 submitted. The PCB is awaiting the manufacturer's engineering verification and

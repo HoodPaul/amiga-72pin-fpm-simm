@@ -4,9 +4,9 @@ A common PCB for **4 MB single-sided** and **8 MB double-sided** 5 V FPM SIMMs, 
 
 The project began with a wish to make RAM that visually matches Re-Amiga systems: **black PCB, white silkscreen and gold contacts and exposed pads**. It is a collaboration between **Paul of UK Computing Limited**, **Jon of JMC Electronics** and **AI assistance through Codex**.
 
-**Routed CAD draft. No physical prototype has been tested. The included Gerbers are for review, not an approved manufacturing release.**
+**A7 prototype design. The first JLCPCB production files have been reviewed; no physical prototype has been assembled or tested.**
 
-**Status, 19 October 2026:** donor components have been ordered, and the PCB order has been submitted. The PCB is awaiting the manufacturer's engineering verification and approval before manufacture. Assembly and hardware testing are still to follow.
+**Status, 20 October 2026:** donor components have been ordered and a **15-board JLCPCB order** has been placed. Comparison of JLCPCB's processed files against the A7 submission found no change that blocks prototype manufacture. The review supports confirming those production files; completion of the website confirmation has not been recorded. Assembly, socket fit and Amiga testing remain pending. See the [production-file review](docs/JLCPCB-PRODUCTION-REVIEW.md).
 
 ![Front appearance](previews/appearance-front.png)
 ![Rear appearance](previews/appearance-rear.png)
@@ -21,7 +21,7 @@ Open [HY8M-SIMM.kicad_pro](HY8M-SIMM.kicad_pro) with **KiCad 10.0 or newer**. Pr
 |---|---|
 | Connector | 72-pin SIMM, 32-bit non-parity |
 | Outline | 107.95 × 25.4 mm |
-| Finished thickness | 1.2 mm proposed; stack-up not approved |
+| Finished thickness | 1.2 mm ordered; measure finished boards and verify socket fit |
 | Copper layers | **Four** |
 | F.Cu | Front signals and pads |
 | In1.Cu | GND plane |
@@ -67,13 +67,13 @@ An “8 MB / 2M×32 / 72-pin” listing or bare PCB number does not identify its
 
 Test the intact donor before desoldering and record orientation/pin 1. One healthy four-chip donor can supply one 8 MB board or two 4 MB boards, assuming all devices survive removal. This project does not certify donor authenticity, seller stock or recovered-chip health.
 
-## Fabrication issues still open
+## Prototype fabrication and remaining checks
 
-- **Finger setback:** the 144 contact pads have **0.2286 mm** clearance to the outline. [PCBWay's published gold-finger guidance](https://www.pcbway.com/pcb_prototype/PCB_Gold_fingers.html) specifies **0.5 mm minimum**. The present geometry needs a manufacturer-approved resolution before manufacture.
-- **Bevel:** a **45° bevel is unresolved**, not an approved order setting. Agree the actual contact/bevel geometry and processing method for this 25.4 mm-high module; see [PCBWay's bevel guidance](https://www.pcbway.com/helpcenter/Engineering_Questions/The_requirement_of_beveling_on_gold_finger_area.html).
-- Confirm the proposed 1.2 mm finished stack-up, SOJ land pattern, socket/case fit and wear-resistant hard-gold contact process. Generic ENIG is not a substitute for an agreed finger-plating specification.
+- **Current order:** four layers, 1.2 mm nominal, 1 oz copper on all layers, black mask, white silkscreen, **ENIG 2 microinch**, ink-plugged vias, **no bevel**, deburring, no edge plating and no manufacturer mark. See the [ordering settings and screenshots](docs/FABRICATION-OPTIONS.md).
+- **Contacts:** the native pad setback is **0.2286 mm**; CAM copper compensation leaves approximately **0.221 mm**. The original 144 findings against the generic 0.50 mm edge rule remain documented. The reviewed CAM preserves all contacts and functional connections; this is specific to this prototype package, not blanket approval for other manufacturers or bevel processes.
+- **Finish and fit:** the selected ENIG prototype finish differs from the earlier selective hard-gold proposal. Hard gold offers better wear resistance for repeated insertion. Measure the finished connector thickness and inspect edge quality, SOJ fit and socket/case clearance before use. Substantial hand bevelling could cut into the plated contacts.
 
-The retaining holes are closed circular Edge.Cuts profiles, not duplicate NPTH drill hits. Use the [four-layer file map](docs/layer-file-map.txt) and read [fabrication notes](fabrication-review/READ-BEFORE-ORDERING.txt). The common paste layers include all footprints; assembly/stencil use must follow the chosen BOM.
+The retaining holes are closed circular Edge.Cuts profiles in the source; JLCPCB converted these to **3.18 mm finished non-plated holes** with compensated 3.25 mm tools. Use the [four-layer file map](docs/layer-file-map.txt) and read [fabrication notes](fabrication-review/READ-BEFORE-ORDERING.txt). The common paste layers include all footprints; assembly/stencil use must follow the chosen BOM.
 
 ## Checks and limitations
 
@@ -101,8 +101,9 @@ The current silkscreen preserves the manually edited layout, with UK Computing a
 | [source/](source/) | Artwork baseline, reference PCB and development/verification tools |
 | [Assembly guide](docs/ASSEMBLY.md) | 70 ns parts, fitting and system quantities |
 | [Component ordering](docs/COMPONENT-ORDERING.md) | DigiKey parts and quantities for either ten single-sided or ten double-sided modules, with spares |
-| [Fabrication options](docs/FABRICATION-OPTIONS.md) | Quotation selections and open bevel review |
-| [PCB ordering screenshots](docs/FABRICATION-OPTIONS.md#ordering-screenshot-reminders) | PCBWay settings, hard-gold thickness and selective-finish reminders |
+| [Fabrication options](docs/FABRICATION-OPTIONS.md) | Current JLCPCB order and historical PCBWay quotation |
+| [PCB ordering screenshots](docs/FABRICATION-OPTIONS.md#jlcpcb-ordering-screenshots) | JLCPCB settings, four-layer sequence and earlier PCBWay reminders |
+| [JLCPCB production review](docs/JLCPCB-PRODUCTION-REVIEW.md) | Original-to-CAM comparison, compensated drills and confirmation action |
 | [Project history](docs/PROJECT-HISTORY.md) | A1–A7 development record |
 | [NOTICE.md](NOTICE.md) | Template attribution and supplied artwork |
 

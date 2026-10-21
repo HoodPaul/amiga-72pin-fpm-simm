@@ -6,10 +6,12 @@ The first **15-board** order was placed with JLCPCB after the PCBWay quotation
 was too expensive. The processed production archive has been reviewed against
 the original A7 exports, with **no functional connection change or correction
 blocking prototype manufacture found**. The requested production-file
-confirmation accounts for the order's “1 item Requires Action” notice.
-Completion of that website confirmation has not yet been recorded. See the
+confirmation accounted for the order's “1 item Requires Action” notice.
+
+**Status update, 21 October 2026:** Paul reported that the donor RAM is in
+transit and the 15 new JLCPCB PCBs are in manufacture. See the
 [production review](JLCPCB-PRODUCTION-REVIEW.md) for the exact package hash and
-scope. No assembled board has been tested.
+scope. Assembly, socket fit and Amiga hardware testing remain pending.
 
 | Parameter | Selected JLCPCB option |
 |---|---|

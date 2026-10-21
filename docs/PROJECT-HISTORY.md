@@ -61,9 +61,12 @@ No functional connection change or production-blocking correction was found.
 See [the detailed review](JLCPCB-PRODUCTION-REVIEW.md).
 
 The order's “1 item Requires Action” was the requested production-file
-confirmation. The review supports confirmation for this prototype batch;
-the website confirmation itself has not been recorded as completed. These
-documentation updates do not change the native A7 PCB or original Gerbers.
+confirmation. The review supported confirmation for this prototype batch.
+
+**21 October 2026:** Paul reported that the donor RAM is **in transit** and
+the **15 new JLCPCB PCBs are in manufacture**. Assembly, socket fit and Amiga
+hardware testing remain pending. This status update does not change the
+native A7 PCB or original Gerbers.
 
 No revision has been physically validated in an Amiga. The intended 8 MB assembly providing 2 MB Chip RAM remains an inference from host wiring. CAD connectivity and mapping checks are separate from timing, refresh, fit and hardware testing.
 

@@ -27,7 +27,9 @@ All **14 original Gerber, drill and job files** retained in the package match th
 
 The reviewed production specification records fifteen boards, four layers, nominal 1.2 mm thickness, 1 oz inner and outer copper, black mask, white silkscreen, **ENIG**, ink-plugged vias, **no bevel**, no customer/date code and no PCB assembly. Layer mapping is correct. Order screenshots specify 2 µin gold and deburring; CAM geometry cannot certify actual plating thickness, finishing quality, finished thickness or manufacturing tolerances.
 
-For the existing production-file confirmation, these findings support selecting **“Yes, please proceed to production”** for this reviewed package. No additional Gerber correction was identified. A different archive or later CAM revision needs its own comparison.
+At the 20 October review, these findings supported selecting **“Yes, please proceed to production”** for this reviewed package. No additional Gerber correction was identified. A different archive or later CAM revision needs its own comparison.
+
+**Status update, 21 October 2026:** Paul reported that the new JLCPCB PCBs are in manufacture and the donor RAM is in transit. Production-file confirmation is no longer recorded as an outstanding action. Assembly and hardware testing remain pending.
 
 JLCPCB explains the original/processed folders and confirmation steps in
 [How to confirm the production file](https://jlcpcb.com/help/article/how-to-confirm-the-production-file).

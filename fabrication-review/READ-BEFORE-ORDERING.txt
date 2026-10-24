@@ -1,12 +1,20 @@
 HY8M A7 DRAFT GERBERS: TECHNICAL REVIEW ONLY
 
-STATUS UPDATE, 20 OCTOBER 2026
+LATEST STATUS, 24 OCTOBER 2026
+
+Paul reports that fabrication of the 15 JLCPCB PCBs is complete and the boards
+are now in transit. Receipt, inspection, assembly and Amiga hardware testing
+remain pending. This update does not change any Gerber, drill or native CAD.
+The donor RAM was last reported in transit on 21 October; receipt is unconfirmed.
+
+HISTORICAL REVIEW, 20 OCTOBER 2026
 
 A fifteen-board JLCPCB prototype order has been placed and the returned CAM
 package has been reviewed. No functional connection change or correction
 blocking prototype manufacture was found. See ../docs/JLCPCB-PRODUCTION-REVIEW.md
-for the exact archive hash, scope and limitations. Website confirmation has
-not been recorded as completed; no assembled board has been tested.
+for the exact archive hash, scope and limitations. The 21 October update
+superseded the outstanding website-confirmation step; do not repeat that action
+based on the earlier review. No assembled board has been tested.
 
 Current order: 1.2 mm nominal, four layers, 1 oz inner/outer copper, black mask,
 white silk, ENIG 2 microinch, ink-plugged vias, no bevel, deburring, no edge

@@ -95,3 +95,13 @@ When exporting manufacturing files, start with an empty output directory.
 KiCad versions can use different inner-layer extensions. Retaining older
 exports alongside new ones can make an uploader detect duplicate layers.
 The current A7 filenames and physical order are in docs/layer-file-map.txt.
+
+
+## AI and project continuation
+
+Read [AGENTS.md](../AGENTS.md), the [current handover](../docs/AI-HANDOVER.md)
+and [documentation index](../docs/README.md) before using the tools. Development
+and validation commands are indexed there; this workflow remains authoritative
+for preserving the delivered CAD and identifying destructive historical scripts.
+Fabrication completion/shipping is tracked in the manufacturing record and does
+not change the CAD revision or validation status.

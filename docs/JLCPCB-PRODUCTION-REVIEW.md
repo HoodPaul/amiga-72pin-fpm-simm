@@ -29,7 +29,9 @@ The reviewed production specification records fifteen boards, four layers, nomin
 
 At the 20 October review, these findings supported selecting **“Yes, please proceed to production”** for this reviewed package. No additional Gerber correction was identified. A different archive or later CAM revision needs its own comparison.
 
-**Status update, 21 October 2026:** Paul reported that the new JLCPCB PCBs are in manufacture and the donor RAM is in transit. Production-file confirmation is no longer recorded as an outstanding action. Assembly and hardware testing remain pending.
+**Latest status, 24 October 2026:** Paul reports that fabrication of the 15 JLCPCB PCBs is complete and the boards are now in transit. Receipt, inspection, assembly and hardware testing remain pending. This shipping update does not alter the reviewed files or establish electrical operation.
+
+**Previous update, 21 October 2026:** Paul reported the PCBs in manufacture and donor RAM in transit. Production-file confirmation was no longer outstanding. Donor delivery has not subsequently been confirmed.
 
 JLCPCB explains the original/processed folders and confirmation steps in
 [How to confirm the production file](https://jlcpcb.com/help/article/how-to-confirm-the-production-file).

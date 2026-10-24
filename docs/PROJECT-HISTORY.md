@@ -68,6 +68,13 @@ the **15 new JLCPCB PCBs are in manufacture**. Assembly, socket fit and Amiga
 hardware testing remain pending. This status update does not change the
 native A7 PCB or original Gerbers.
 
+**24 October 2026:** Paul reports that **PCB fabrication is complete and the
+15 JLCPCB boards are now in transit**. Receipt and finished-board inspection
+are not yet confirmed. No new donor-delivery, assembly or hardware-test result
+was supplied. The A7 CAD, BOMs and manufacturing exports remain unchanged.
+A repository documentation foundation was prepared to help future engineers
+and AI tools continue from the current files and dated evidence.
+
 No revision has been physically validated in an Amiga. The intended 8 MB assembly providing 2 MB Chip RAM remains an inference from host wiring. CAD connectivity and mapping checks are separate from timing, refresh, fit and hardware testing.
 
 The inherited native contact setback remains 0.2286 mm against the 0.50 mm

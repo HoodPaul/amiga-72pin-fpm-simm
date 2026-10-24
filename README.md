@@ -6,7 +6,9 @@ The project began with a wish to make RAM that visually matches Re-Amiga systems
 
 **A7 prototype design. The first JLCPCB production files have been reviewed; no physical prototype has been assembled or tested.**
 
-**Status, 21 October 2026:** the donor RAM is **in transit** and the **15 new JLCPCB PCBs are in manufacture**, as reported by Paul. The production-file review is complete. Assembly, socket fit and Amiga testing remain pending. See the [production-file review](docs/JLCPCB-PRODUCTION-REVIEW.md).
+**Status, 24 October 2026:** Paul reports that **fabrication of the 15 JLCPCB PCBs is complete and the boards are now in transit**. Receipt, inspection, assembly, socket fit and Amiga hardware testing remain pending. The donor RAM was last reported in transit on 21 October; no later donor delivery update has been supplied. See the [manufacturing record](docs/FABRICATION-OPTIONS.md) and [production-file review](docs/JLCPCB-PRODUCTION-REVIEW.md).
+
+For another engineer or AI picking up the project, start with [AGENTS.md](AGENTS.md), the [current AI handover](docs/AI-HANDOVER.md) and the [documentation index](docs/README.md).
 
 ![Front appearance](previews/appearance-front.png)
 ![Rear appearance](previews/appearance-rear.png)

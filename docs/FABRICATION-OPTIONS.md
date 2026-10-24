@@ -8,10 +8,17 @@ the original A7 exports, with **no functional connection change or correction
 blocking prototype manufacture found**. The requested production-file
 confirmation accounted for the order's “1 item Requires Action” notice.
 
-**Status update, 21 October 2026:** Paul reported that the donor RAM is in
-transit and the 15 new JLCPCB PCBs are in manufacture. See the
-[production review](JLCPCB-PRODUCTION-REVIEW.md) for the exact package hash and
-scope. Assembly, socket fit and Amiga hardware testing remain pending.
+**Latest status, 24 October 2026:** Paul reports that fabrication of the
+**15 JLCPCB PCBs is complete and the boards are now in transit**. Receipt,
+finished-board inspection, assembly, socket fit and Amiga hardware testing
+remain pending. This is an owner-reported shipping update, not an independent
+carrier check or proof of assembled-module operation.
+
+**Previous update, 21 October 2026:** the donor RAM was in transit and the
+PCBs were in manufacture. No later donor delivery update has been supplied.
+See the [production review](JLCPCB-PRODUCTION-REVIEW.md) for the exact package
+hash and scope; use the [hardware test log](HARDWARE-TEST-LOG.md) to record
+future physical evidence.
 
 | Parameter | Selected JLCPCB option |
 |---|---|

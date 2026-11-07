@@ -1,10 +1,14 @@
 # Hardware inspection and test log
 
-## Current evidence, 24 October 2026
+## First hardware validation, 7 November 2026
 
-**No physical inspection, assembly or Amiga hardware test result is recorded.**
-Paul reports fabrication complete and the PCBs in transit. Receipt is pending.
-This is a log structure for future evidence; the checklist below has not been run.
+**PASS WITH STATED SCOPE: successful initial Amiga 4000D memory detection and reported operation.** Five Rev A7 modules were fitted: one fully populated 8 MB double-sided module in the Chip RAM socket, detected as **2 MB Chip RAM**, plus four front-only 4 MB modules in the Fast RAM sockets, detected as **16 MB Fast RAM**. Kickstart Memory Scan reports **18.00 MB total, 2.00 MB Chip, 16.00 MB Fast and 0.00 MB Slow**. Paul reports the system alive and working and supplied photographs of the fitted modules and scan display.
+
+Motherboard revision, memory diagnostic duration, pattern-test completion, refresh/retention, graphics/DMA and cold/warm boot repetition are not yet documented. The remaining two planned A4000D builds are not yet documented as tested. See the [full dated hardware report](2026-11-07-FIRST-A4000D-HARDWARE-TEST.md).
+
+### Historical status on 24 October 2026
+
+No hardware results had yet been supplied; the PCB order was reported manufactured and in transit. Receipt dates, shipment quantity verified, module IDs and measured board thickness remain unrecorded.
 
 ## Receiving and pre-assembly checklist
 

@@ -4,9 +4,9 @@ A common PCB for **4 MB single-sided** and **8 MB double-sided** 5 V FPM SIMMs, 
 
 The project began with a wish to make RAM that visually matches Re-Amiga systems: **black PCB, white silkscreen and gold contacts and exposed pads**. It is a collaboration between **Paul of UK Computing Limited**, **Jon of JMC Electronics** and **AI assistance through Codex**.
 
-**A7 prototype design. The first JLCPCB production files have been reviewed; no physical prototype has been assembled or tested.**
+**FIRST SUCCESSFUL HARDWARE TEST: 7 November 2026.** Five custom Rev A7 SIMMs installed in an Amiga 4000D were recognised by Kickstart Memory Scan as **18.00 MB total (2.00 MB Chip RAM + 16.00 MB Fast RAM)**. The Chip RAM socket contained one physically **8 MB double-sided** module, recognised as **2 MB Chip RAM**; the four Fast RAM sockets contained four **4 MB front-only** modules. Paul reports the machine alive and working. This establishes initial detection and operation, not a completed extended memory, refresh, retention or graphics/DMA diagnostic. See the [first hardware test report](docs/2026-11-07-FIRST-A4000D-HARDWARE-TEST.md).
 
-**Status, 24 October 2026:** Paul reports that **fabrication of the 15 JLCPCB PCBs is complete and the boards are now in transit**. Receipt, inspection, assembly, socket fit and Amiga hardware testing remain pending. The donor RAM was last reported in transit on 21 October; no later donor delivery update has been supplied. See the [manufacturing record](docs/FABRICATION-OPTIONS.md) and [production-file review](docs/JLCPCB-PRODUCTION-REVIEW.md).
+**Previous manufacturing milestone, 24 October 2026:** All 15 JLCPCB PCBs were reported manufactured and in transit. Five have since been assembled and demonstrated in the host. Exact receipt date, full shipment count and finished-board measurements have not been recorded. See the [manufacturing record](docs/FABRICATION-OPTIONS.md) and [production-file review](docs/JLCPCB-PRODUCTION-REVIEW.md).
 
 For another engineer or AI picking up the project, start with [AGENTS.md](AGENTS.md), the [current AI handover](docs/AI-HANDOVER.md) and the [documentation index](docs/README.md).
 
@@ -57,7 +57,7 @@ A true 4 MB single-sided build omits U3/U4, C3/C4 and R1–R4. Disabling the rea
 | 16 MB Fast RAM | Two 8 MB modules in Fast slots 1 and 3 |
 | 16 MB Fast RAM | Four front-only 4 MB modules in Fast slots 1–4 |
 
-Fast-slot numbering excludes the separate Chip RAM socket. These configurations are based on A4000 host-wiring research and **remain untested on hardware**. The Chip RAM experiment uses the four-chip 8 MB assembly. See [compatibility research](docs/compatibility-research.md) for sources and motherboard-revision details.
+Fast-slot numbering excludes the separate Chip RAM socket. **The 8 MB physical Chip module used as 2 MB Chip RAM and four 4 MB Fast modules have now been recognised together on an A4000D (7 November 2026)**. The alternative two-8 MB Fast RAM configuration remains untested. The Chip RAM socket does not gain 8 MB of addressable Chip RAM. See [hardware test evidence](docs/2026-11-07-FIRST-A4000D-HARDWARE-TEST.md) and [compatibility research](docs/compatibility-research.md).
 
 ## Donor chips
 

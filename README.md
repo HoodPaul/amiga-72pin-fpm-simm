@@ -67,6 +67,10 @@ Obtain readable photographs of **every fitted chip on both faces** before buying
 
 An “8 MB / 2M×32 / 72-pin” listing or bare PCB number does not identify its chips. **HY5118164 is EDO**, and **HY5116160B has a different refresh organisation**; neither is the specified donor. Confirm the complete marking and datasheet rather than relying on similar part numbers.
 
+### Most likely alternative DRAMs (not yet tested)
+
+The **LG/GoldStar GM71C18160CJ-7 (70 ns)**, **GM71C18160CJ-6 (60 ns)**, **Samsung KM416C1200AJ-7 (70 ns)** and **KM416C1200AJ-6 (60 ns)** are promising **5 V, 1M × 16, FPM, 1K-refresh, 42-pin SOJ** candidates. **All four remain untested on Rev A7**, with no proven donor-board or Amiga hardware result. Confirm the exact part's pinout, package, refresh and timing before using it. See the [LG/Samsung alternative comparison and source links](docs/compatibility-research.md#high-confidence-lggoldstar-and-samsung-alternatives-untested-9-november-2026).
+
 Test the intact donor before desoldering and record orientation/pin 1. One healthy four-chip donor can supply one 8 MB board or two 4 MB boards, assuming all devices survive removal. This project does not certify donor authenticity, seller stock or recovered-chip health.
 
 ## Prototype fabrication and remaining checks

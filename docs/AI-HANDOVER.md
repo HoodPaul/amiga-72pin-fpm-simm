@@ -1,6 +1,6 @@
 # AI handover: Amiga 72-pin FPM SIMM
 
-Last updated: 24 October 2026.
+Last updated: 9 November 2026.
 
 Reviewed source baseline: `5a90faf34ac0664407d348f80cab60a2ef8e9f58` on `main`.
 This identifies the source reviewed before this documentation change, not a
@@ -22,6 +22,10 @@ Jon of JMC Electronics and AI assistance through Codex are credited collaborator
 - Production-file review is complete for the package identified in [JLCPCB review](JLCPCB-PRODUCTION-REVIEW.md). Do not repeat its historical confirmation step or assume it validates another package.
 - Current order finish is ENIG 2 microinch, with no bevel, black mask and white silk. The older PCBWay hard-gold/bevel proposal is historical.
 - This change adds AI/project guides and updates status only. Native CAD, libraries, BOMs, Gerbers, drills and validation reports are unchanged. No new KiCad, electrical or physical testing is claimed.
+
+## 9 November 2026: untested DRAM sourcing options
+
+LG/GoldStar **GM71C18160CJ-6/-7** and Samsung **KM416C1200AJ-6/-7** have been added to [compatibility research](compatibility-research.md#high-confidence-lggoldstar-and-samsung-alternatives-untested-9-november-2026) as **promising but entirely untested** candidates. Their 5 V, 1M × 16 FPM, 1K-refresh and 42-pin SOJ characteristics are consistent with the original Hyundai design requirements. Confirm exact part pinout/physical dimensions and carry out full hardware validation before changing any assembly BOM or calling a candidate proven. The successful 7 November 2026 A4000D test continues to apply only to Hyundai HY5118160JC-70.
 
 ## Important corrections to older chat context
 

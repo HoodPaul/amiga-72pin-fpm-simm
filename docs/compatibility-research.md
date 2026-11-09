@@ -107,6 +107,30 @@ The verified assembly options can therefore specify **HY5118160JC-70 for 70 ns**
 
 Do not confuse the verified **HY5118160B** with **HY5116160B**. The latter is a 4K-refresh part whose extra row addresses A10/A11 occupy pins left NC in the 1K-refresh part; it is not approved by this comparison. Similar-looking part numbers, including HY5118164 variants, are not approved by this comparison. TSOP suffixes TC/RC do not fit the JC SOJ footprint. [6, 7]
 
+## High-confidence LG/GoldStar and Samsung alternatives (UNTESTED, 9 November 2026)
+
+The following devices are **promising alternatives for future Rev A7 builds**, based on manufacturer-family documentation and part listings. **None has yet been soldered to the Rev A7 PCB or tested in an Amiga 4000D.** They must not be confused with the **HY5118160JC-70**, which is physically demonstrated in the 7 November 2026 build, or the separately datasheet-verified Hyundai **HY5118160BJC-60**.
+
+| Maker / family | Exact candidate marking | Rated access | Basis for listing | Rev A7 status |
+|---|---|---:|---|---|
+| LG/GoldStar (also found under Hynix listings) | **GM71C18160CJ-7** | 70 ns | 5 V, 1M × 16, FPM, 1K refresh, 42-pin 400 mil SOJ | **Untested candidate** |
+| LG/GoldStar (also found under Hynix listings) | **GM71C18160CJ-6** | 60 ns | Same family/package, 60 ns grade | **Untested candidate** |
+| Samsung | **KM416C1200AJ-7** | 70 ns | 5 V, 1M × 16, FPM, 1K refresh, 42-pin SOJ (A-family, J package) | **Untested candidate** |
+| Samsung | **KM416C1200AJ-6** | 60 ns | Same family/package, 60 ns grade | **Untested candidate** |
+
+**Why these are likely to work:** Both families document the essential organisation, 5 V supply, FPM access, 1,024-refresh-cycles-per-16 ms organisation and 42-pin SOJ format required by the current HY5118160JC design. They are promising JEDEC-style candidates, **not electrically or mechanically certified drop-in replacements**. The exact grade/package suffix matters. Before purchasing or assembling, compare the complete original manufacturer's pin mapping (particularly A0–A9, DQ0–DQ15, /RAS, /UCAS, /LCAS, /WE, /OE, VCC/VSS and NC pins), SOJ outline/height and timing against **HY5118160JC-70** and the saved KiCad footprint.
+
+**Important exclusions:** Do not confuse Samsung **KM416C1200** (1K-refresh FPM) with **KM416C1000** (4K refresh), **KM416C1204** (EDO), or **KM416V1200** (3.3 V). Likewise, LG **GM71V18160** is the 3.3 V family, and similarly numbered EDO or 4K parts are not approved by this comparison. The **J** package suffix is important: TSOP packages will not fit the SOJ footprint.
+
+**Assembly/test plan:** Use one uniform verified part type and speed grade per module; follow the repository's correct **70 ns or 60 ns** variant BOM/PD fitting. First build a single 4 MB front-only sample, confirm unpowered checks and pin-1 orientation, then verify detection and extended memory-pattern/retention tests on the A4000D. Test an 8 MB double-sided sample separately, including the Chip RAM arrangement and graphics/DMA behaviour. Record the exact chip markings, motherboard revision and test outcomes in [HARDWARE-TEST-LOG.md](HARDWARE-TEST-LOG.md). Do not promote any candidate to **tested** without evidence.
+
+**Datasheet and identification references (reviewed 9 November 2026):**
+
+- LG/GoldStar/Hynix **GM71C18160C/GM71CS18160CL** family: 5 V FPM, 1M × 16, 1K/16 ms, SOJ J grades -5/-6/-7. <https://dtsheet.com/doc/1065197/etc-gm71cs18160clj-5> and exact part listings <https://www.datasheetarchive.com/?q=gm71c18160>.
+- Samsung **1995 DRAM databook**, KM416C1200A 5 V 1K FPM family; **J** = 42-pin SOJ, -6/-7 speed grades. <https://www.bitsavers.org/components/samsung/_Databooks/1995_Samsung_MOS_Memory_DRAM_1110-4091.pdf>.
+- Samsung **KM416C1200C** family datasheet is corroborating later-family evidence for 5 V, 1K, JEDEC pinout and SOJ, **not** a replacement for checking the specific older AJ suffix. <https://www.bg-electronics.de/datenblaetter/Schaltkreise/KM416C1200C.pdf>.
+- Exact Samsung AJ listings: <https://www.datasheetarchive.com/?q=km416c1200aj>.
+
 ## Primary documents
 
 1. **Commodore A4000 User's Guide**, Commodore Electronics Limited, 1992, P/N 368 924-01. Printed pp. 4-2–4-4 and A-1–A-2; PDF pages 45–47 and 74–75 (one-based). <https://www.retromaniek.pl/wp-content/uploads/2019/04/Commodore-Amiga-4000-User-Guide.pdf>
